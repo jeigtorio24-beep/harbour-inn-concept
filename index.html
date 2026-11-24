@@ -1,0 +1,1758 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Dunlop Inn · Waterfront inn in Baddeck, Cape Breton (concept)</title>
+<meta name="description" content="Concept redesign: Baddeck's only waterfront accommodations, with a private sandy beach and waterside deck. Email or call the inn.">
+<meta name="theme-color" content="#0c2237">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c2237'/%3E%3Cpath d='M28 18h8l3 32H25z' fill='%23f4f1ea'/%3E%3Cpath d='M26 14h12v5H26z' fill='%23c8372d'/%3E%3Cpath d='M20 50h24v4H20z' fill='%23b8925a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gloock&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/poster.webp" media="(min-aspect-ratio: 17/20)">
+<link rel="preload" as="image" href="assets/poster-tall.webp" media="(max-aspect-ratio: 17/20)">
+<style>
+html,body{background:#0c2237;color:#13263a}
+:root{
+  --atlantic:#0c2237;   /* deep Atlantic blue */
+  --atlantic-2:#123452;
+  --atlantic-3:#1b4569;
+  --clap:#f5f2eb;       /* white clapboard */
+  --clap-2:#ece7dc;
+  --fog:#d7dde0;        /* sea-fog grey */
+  --fog-2:#e8ecee;
+  --fog-ink:#5b6b78;
+  --brass:#b8925a;      /* weathered brass */
+  --brass-2:#d7b47a;
+  --brass-ink:#7d5f2f;  /* brass dark enough for text on light */
+  --signal:#c8372d;     /* signal red */
+  --ink:#13263a;
+  --ink-70:rgba(19,38,58,.76);
+  --rule:rgba(19,38,58,.16);
+  --serif:Gloock,"Libre Caslon Text",Georgia,serif;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --gut:clamp(16px,4vw,56px);
+  --col:min(1240px,100% - 2*var(--gut));
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:clip;-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 17px/1.62 var(--sans);background:var(--clap);overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:rgba(200,55,45,.22)}
+:focus-visible{outline:2px solid var(--signal);outline-offset:3px;border-radius:4px}
+.wrap{width:var(--col);margin-inline:auto}
+.sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.eyebrow{font:600 12.5px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--brass-ink);display:inline-flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--signal)}
+.on-dark .eyebrow{color:var(--brass-2)}
+h2.big{font:400 clamp(40px,5.4vw,82px)/.98 var(--serif);letter-spacing:-.012em;color:var(--atlantic);margin-top:18px}
+h2.big em{font-style:normal;color:var(--signal)}
+.on-dark h2.big{color:var(--clap)}
+.on-dark h2.big em{color:var(--brass-2)}
+.lede{font-size:clamp(17px,1.3vw,19px);color:var(--ink-70);max-width:36rem;margin-top:18px}
+.on-dark .lede{color:rgba(245,242,235,.8)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:13px 22px;border-radius:999px;font:600 15px/1 var(--sans);letter-spacing:.02em;text-decoration:none;transition:background-color .25s,color .25s,transform .2s var(--ease),box-shadow .25s;white-space:nowrap}
+.btn svg{width:18px;height:18px;flex:none}
+.btn:active{transform:scale(.97)}
+.btn--red{background:var(--signal);color:#fff}
+.btn--red:hover{background:#a92a21}
+.btn--navy{background:var(--atlantic);color:var(--clap)}
+.btn--navy:hover{background:var(--atlantic-3)}
+.btn--line{box-shadow:inset 0 0 0 1.5px currentColor}
+.btn--line:hover{background:rgba(184,146,90,.16)}
+.btn--clap{background:var(--clap);color:var(--atlantic)}
+.btn--clap:hover{background:#fff}
+.chip{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border-radius:999px;font:500 15px/1.1 var(--sans);box-shadow:inset 0 0 0 1.5px var(--rule);background:#fff;color:var(--ink);transition:background-color .2s,box-shadow .2s,color .2s,transform .15s}
+.chip:hover{box-shadow:inset 0 0 0 1.5px var(--brass)}
+.chip:active{transform:scale(.97)}
+.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--atlantic);color:var(--clap);box-shadow:none}
+.chip .tick{width:16px;height:16px;display:none}
+.chip[aria-pressed="true"] .tick{display:block}
+.note{font-size:13.5px;color:var(--fog-ink)}
+.on-dark .note{color:rgba(245,242,235,.66)}
+section{position:relative}
+.sec{padding:clamp(84px,10vw,150px) 0}
+
+/* ribbon / header */
+.ribbon{background:#071827;color:rgba(245,242,235,.86);font:500 13px/1.35 var(--sans);text-align:center;padding:9px 16px}
+.progress{position:fixed;left:0;top:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,var(--brass),var(--brass-2));z-index:80}
+header.top{position:sticky;top:0;z-index:60;background:rgba(9,27,45,.78);-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border-bottom:1px solid rgba(215,180,122,.22);color:var(--clap)}
+.top .wrap{display:flex;align-items:center;gap:24px;height:66px}
+.mark{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
+.mark svg{width:30px;height:34px}
+.mark b{display:block;font:400 25px/1 var(--serif);letter-spacing:.01em}
+.mark small{display:block;font:600 10.5px/1 var(--sans);letter-spacing:.26em;text-transform:uppercase;color:var(--brass-2);margin-top:5px}
+nav.main{display:flex;gap:clamp(14px,1.8vw,28px)}
+nav.main a{font:500 14.5px/1 var(--sans);text-decoration:none;color:rgba(245,242,235,.84);padding:10px 0;position:relative;transition:color .2s}
+nav.main a::after{content:"";position:absolute;left:0;right:0;bottom:3px;height:2px;background:var(--brass-2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
+nav.main a:hover{color:#fff}
+nav.main a:hover::after{transform:scaleX(1)}
+.top .btn{min-height:42px;padding:11px 18px;font-size:14px}
+@media (max-width:1060px){nav.main{display:none}}
+@media (max-width:560px){.top .btn{display:none}.mark b{font-size:22px}}
+
+/* ============ FILM ============ */
+.film{position:relative;background:#0b1c30;color:var(--clap)}
+.stage{position:relative;height:auto;overflow:hidden}
+.poster{position:relative;width:100%;aspect-ratio:16/9;object-fit:cover;object-position:62% 50%}
+.stage canvas{display:none}
+.beats{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(215,180,122,.2)}
+.beat{background:#0b1c30;padding:34px clamp(20px,3vw,40px) 40px}
+.beat .k{font:600 12px/1 var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--brass-2);display:flex;gap:10px;align-items:center}
+.beat .k i{width:18px;height:2px;background:var(--signal);display:block}
+.beat h3{font:400 clamp(28px,2.6vw,40px)/1.04 var(--serif);margin-top:16px;letter-spacing:-.005em}
+.beat p{margin-top:12px;color:rgba(245,242,235,.8);max-width:30rem}
+.beat .feat{display:inline-flex;margin-top:16px;font:600 12px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--clap);background:rgba(200,55,45,.9);padding:8px 11px;border-radius:3px}
+.beat--hero{grid-column:1/-1;padding-top:44px}
+.beat--hero h1{font:400 clamp(44px,6.2vw,100px)/.96 var(--serif);letter-spacing:-.015em;max-width:12ch}
+.beat--hero h1 em{font-style:normal;color:var(--brass-2)}
+.beat--hero p{font-size:clamp(17px,1.35vw,20px);max-width:33rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.film-note{position:absolute;right:14px;bottom:10px;font:500 11.5px/1.2 var(--sans);color:rgba(245,242,235,.66);z-index:6;text-align:right;letter-spacing:.02em}
+.rail,.cue,.skip{display:none}
+@media (max-width:860px){.beats{grid-template-columns:1fr}.poster{aspect-ratio:3/4;object-position:58% 50%}}
+
+/* JS film mode */
+.film-on .film{height:calc(var(--vh,1vh) * 720)}
+.film-on .stage{position:sticky;top:var(--hdr,67px);height:calc(100vh - 67px);height:calc(var(--vh,1vh) * 100 - var(--hdr,67px))}
+.film-on .poster{position:absolute;inset:0;height:100%;aspect-ratio:auto;transition:opacity .9s}
+.film-on .stage canvas{display:block;position:absolute;inset:0;width:100%;height:100%;opacity:0;transition:opacity .9s ease}
+.film-on .stage.live canvas{opacity:1}
+.film-on .stage.live .poster{opacity:0}
+.film-on .scrim{position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(46% 62% at 17% 52%,rgba(5,15,28,.68),rgba(5,15,28,.3) 58%,rgba(5,15,28,0) 85%),linear-gradient(0deg,rgba(5,15,28,.3),rgba(5,15,28,0) 26%)}
+.film-on .beats{display:block;position:absolute;inset:0;background:none;z-index:4;pointer-events:none}
+.film-on .beat{position:absolute;left:clamp(20px,5.5vw,96px);top:50%;width:min(500px,40vw);padding:0;background:none;opacity:0;transform:translateY(calc(-50% + 26px));transition:opacity .6s var(--ease),transform .8s var(--ease);visibility:hidden}
+.film-on .beat.on{opacity:1;transform:translateY(-50%);visibility:visible;pointer-events:auto;transition:opacity .7s var(--ease) .1s,transform .9s var(--ease) .1s,visibility 0s}
+.film-on .beat--hero{width:min(640px,48vw)}
+.film-on .beat p{text-shadow:0 1px 18px rgba(4,12,24,.5)}
+.film-on .beat h3{font-size:clamp(40px,4vw,64px);line-height:1}
+.film-on .beat p{font-size:clamp(17px,1.25vw,19px)}
+.film-on .beat .k{font-size:12.5px}
+.film-on .rail{display:flex;position:absolute;right:clamp(16px,2.6vw,40px);top:50%;transform:translateY(-50%);flex-direction:column;gap:6px;z-index:5}
+.rail button{display:flex;align-items:center;justify-content:flex-end;gap:12px;min-height:40px;font:600 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:rgba(245,242,235,.6);transition:color .3s}
+.rail button i{width:12px;height:12px;border-radius:50%;box-shadow:inset 0 0 0 1.5px rgba(245,242,235,.7);transition:background-color .3s,transform .3s,box-shadow .3s}
+.rail button:hover{color:#fff}
+.film-on .rail button span{opacity:0;transform:translateX(6px);transition:opacity .3s,transform .3s var(--ease)}
+.film-on .rail:hover button span,.film-on .rail:focus-within button span,.film-on .rail button.on span{opacity:1;transform:none}
+.rail button.on{color:var(--clap)}
+.rail button.on i{background:var(--signal);box-shadow:0 0 0 4px rgba(200,55,45,.28);transform:scale(1.15)}
+.rail .line{position:absolute;right:5px;top:20px;bottom:20px;width:2px;background:rgba(245,242,235,.18);z-index:-1}
+.rail .line b{position:absolute;inset:0;background:var(--brass-2);transform-origin:top;transform:scaleY(0)}
+.film-on .cue{display:flex;position:absolute;left:50%;bottom:calc(26px + var(--rib,0px));transform:translateX(-50%);z-index:5;align-items:center;gap:10px;font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:rgba(245,242,235,.85);transition:opacity .5s}
+.cue span{width:22px;height:34px;border-radius:12px;box-shadow:inset 0 0 0 1.5px rgba(245,242,235,.8);position:relative}
+.cue span::after{content:"";position:absolute;left:50%;top:7px;width:3px;height:7px;border-radius:2px;background:var(--brass-2);transform:translateX(-50%);animation:cue 1.8s var(--ease) infinite}
+@keyframes cue{0%{opacity:0;transform:translate(-50%,0)}30%{opacity:1}100%{opacity:0;transform:translate(-50%,12px)}}
+.film-on .skip{display:inline-flex;position:absolute;left:clamp(20px,5.5vw,96px);bottom:calc(24px + var(--rib,0px));z-index:5;font:500 13px/1 var(--sans);color:rgba(245,242,235,.74);text-decoration:none;padding:12px 0;border-bottom:1px solid rgba(245,242,235,.3)}
+.skip:hover{color:#fff}
+.film-on .film-note{bottom:auto;top:14px}
+.film-on .beat .feat{background:rgba(200,55,45,.92)}
+@media (max-width:860px){
+  .film-on .film{height:calc(var(--vh,1vh) * 680)}
+  .film-on .scrim{background:linear-gradient(0deg,rgba(5,15,28,.86) 0%,rgba(5,15,28,.62) 34%,rgba(5,15,28,0) 58%)}
+  .film-on .beat,.film-on .beat--hero{left:18px;right:18px;width:auto;top:auto;bottom:calc(88px + var(--rib,0px) + env(safe-area-inset-bottom));transform:translateY(22px)}
+  .film-on .beat.on{transform:none}
+  .film-on .beat--hero h1{font-size:clamp(38px,11vw,54px)}
+  .film-on .beat h3{font-size:30px}
+  .film-on .beat p{font-size:16px;margin-top:8px}
+  .film-on .rail{top:14px;right:auto;left:18px;transform:none;flex-direction:row;gap:0}
+  .film-on .rail button{min-height:44px;min-width:36px;justify-content:center}
+  .film-on .rail button span{display:none}
+  .film-on .rail button.on span{display:inline;position:absolute;left:100%;margin-left:12px;white-space:nowrap}
+  .film-on .rail .line{right:auto;top:50%;bottom:auto;left:18px;width:calc(100% - 36px);height:2px}
+  .film-on .rail .line b{transform-origin:left;transform:scaleX(0)}
+  .film-on .cue{display:none}
+  .film-on .skip{display:none}
+  .film-on .film-note{top:auto;bottom:calc(72px + var(--rib,0px) + env(safe-area-inset-bottom));right:18px;font-size:10.5px}
+  .film-on .beat--hero .hero-cta{display:none}
+}
+@media (max-width:860px) and (max-height:700px){.film-on .beat--hero p{display:none}}
+
+/* ============ TICKER ============ */
+.ticker{background:var(--atlantic);border-top:1px solid rgba(215,180,122,.25);border-bottom:1px solid rgba(215,180,122,.25);overflow:hidden;color:var(--clap)}
+.ticker .row{display:flex;width:max-content;animation:tick 46s linear infinite}
+.ticker:hover .row{animation-play-state:paused}
+.ticker ul{display:flex;align-items:center;list-style:none;gap:34px;padding:20px 17px;font:400 clamp(20px,2vw,28px)/1 var(--serif);white-space:nowrap}
+.ticker li{display:flex;align-items:center;gap:34px}
+.ticker svg{width:26px;height:20px;flex:none}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* ============ ROOMS ============ */
+.rooms{background:var(--clap);background-image:repeating-linear-gradient(180deg,transparent 0 33px,rgba(19,38,58,.045) 33px 34px)}
+.rooms-head{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:end}
+.filters{margin-top:44px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.filters .lab{font:600 12px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--fog-ink);margin-right:6px}
+.explorer{display:grid;grid-template-columns:minmax(260px,.82fr) 1.6fr;gap:clamp(24px,3vw,44px);margin-top:28px;align-items:start}
+.keys{display:none;list-style:none;gap:12px}
+.js .keys{display:grid}
+.key{position:relative;display:flex;align-items:center;gap:16px;width:100%;text-align:left;padding:16px 18px 16px 16px;border-radius:14px;background:#fff;box-shadow:0 1px 0 rgba(19,38,58,.08),inset 0 0 0 1.5px var(--rule);transition:box-shadow .25s,transform .25s var(--ease),opacity .3s,background-color .25s}
+.key:hover{transform:translateX(4px);box-shadow:0 10px 26px -14px rgba(12,34,55,.4),inset 0 0 0 1.5px var(--brass)}
+.key[aria-selected="true"]{background:var(--atlantic);color:var(--clap);box-shadow:0 18px 40px -20px rgba(12,34,55,.7)}
+.key .tag{flex:none;width:44px;height:58px;position:relative}
+.key .tag svg{width:100%;height:100%}
+.key b{display:block;font:400 22px/1.05 var(--serif)}
+.key small{display:block;font:500 13.5px/1.3 var(--sans);color:var(--fog-ink);margin-top:5px}
+.key[aria-selected="true"] small{color:rgba(245,242,235,.7)}
+.key.dim{opacity:.32}
+.key.dim:hover{transform:none}
+.key .pop{margin-left:auto;font:600 10.5px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--signal)}
+.key[aria-selected="true"] .pop{color:var(--brass-2)}
+.nomatch{display:none;padding:16px 18px;border-radius:12px;background:var(--fog-2);font-size:15px;color:var(--ink-70)}
+.nomatch.show{display:block}
+.room{display:grid;grid-template-columns:1fr 1fr;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 30px 70px -40px rgba(12,34,55,.55),inset 0 0 0 1.5px var(--rule);margin-bottom:20px}
+.js .room{display:none;margin:0}
+.js .room.on{display:grid;animation:roomIn .6s var(--ease)}
+@keyframes roomIn{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.room .art{position:relative;background:var(--atlantic);min-height:420px;overflow:hidden}
+.room .art svg{position:absolute;inset:0;width:100%;height:100%}
+.room .art .cap{position:absolute;left:14px;bottom:14px;font:500 12px/1.2 var(--sans);color:#f5f2eb;background:rgba(9,27,45,.78);padding:7px 10px;border-radius:6px;z-index:2;max-width:calc(100% - 28px)}
+.room .body{padding:clamp(26px,3vw,40px);display:flex;flex-direction:column}
+.room .num{font:600 12px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;color:var(--brass-ink)}
+.room h3{font:400 clamp(34px,3.2vw,48px)/1 var(--serif);color:var(--atlantic);margin-top:12px}
+.room .look{font-size:17px;color:var(--ink-70);margin-top:8px}
+.room dl{margin-top:22px;border-top:1px solid var(--rule)}
+.room dl div{display:grid;grid-template-columns:110px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:15.5px}
+.room dt{font:600 11.5px/1.9 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--fog-ink)}
+.room dd{color:var(--ink)}
+.room q{font-family:var(--serif);font-size:19px;color:var(--atlantic);display:block;margin-top:18px}
+.room .acts{margin-top:auto;padding-top:24px;display:flex;gap:10px;flex-wrap:wrap}
+.allrooms{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px 28px;font-size:15px;color:var(--ink-70)}
+.allrooms span{display:inline-flex;align-items:center;gap:8px}
+.allrooms svg{width:18px;height:18px;color:var(--brass-ink)}
+
+/* ============ WATERFRONT ============ */
+.shore{background:var(--atlantic);color:var(--clap);overflow:hidden}
+.shore::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 60% at 85% 10%,rgba(215,180,122,.16),transparent 60%),repeating-linear-gradient(180deg,transparent 0 47px,rgba(245,242,235,.035) 47px 48px);pointer-events:none}
+.quote{font:400 clamp(34px,4.4vw,66px)/1.06 var(--serif);letter-spacing:-.01em;max-width:20ch;margin-top:24px}
+.quote span{color:var(--brass-2)}
+.quote-by{margin-top:18px;font-size:14px;color:rgba(245,242,235,.66)}
+.shore-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:clamp(48px,6vw,84px)}
+.ph{position:relative;border-radius:18px;overflow:hidden;background:var(--atlantic-2)}
+.ph img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease);filter:saturate(.86) contrast(1.05) sepia(.08)}
+.ph:hover img{transform:scale(1.04)}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:44px 22px 20px;background:linear-gradient(0deg,rgba(6,16,30,.88),rgba(6,16,30,0));font-size:15px;color:rgba(245,242,235,.9)}
+.ph figcaption b{display:block;font:400 26px/1.05 var(--serif);color:#fff;margin-bottom:6px}
+.ph figcaption small{display:block;font:500 11.5px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--brass-2);margin-top:10px}
+.ph--a{grid-column:1/7;grid-row:span 2;min-height:560px}
+.ph--b{grid-column:7/13;min-height:270px}
+.ph--c{grid-column:7/10;min-height:272px}
+.ph--d{grid-column:10/13;min-height:272px;background:var(--clap);color:var(--atlantic);padding:26px;display:flex;flex-direction:column;justify-content:space-between}
+.ph--d b{font:400 64px/1 var(--serif);color:var(--signal);white-space:nowrap}
+.ph--d p{font-size:16px;color:var(--ink-70)}
+.ph--d strong{font:400 24px/1.1 var(--serif);color:var(--atlantic);display:block;margin-bottom:8px}
+
+/* ============ ARRIVING ============ */
+.arrive{background:var(--fog);background-image:radial-gradient(rgba(19,38,58,.07) 1px,transparent 1.2px);background-size:22px 22px}
+.arrive-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(32px,5vw,80px);align-items:start;margin-top:12px}
+.steps{list-style:none;margin-top:36px;display:grid;gap:12px}
+.step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;padding:18px;border-radius:16px;background:rgba(255,255,255,.55);box-shadow:inset 0 0 0 1.5px transparent;transition:background-color .3s,box-shadow .3s;cursor:pointer;text-align:left;width:100%}
+.step:hover{background:rgba(255,255,255,.85)}
+.step[aria-pressed="true"]{background:#fff;box-shadow:inset 0 0 0 1.5px var(--brass),0 18px 40px -26px rgba(12,34,55,.5)}
+.step .n{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--atlantic);color:var(--clap);font:400 24px/1 var(--serif)}
+.step[aria-pressed="true"] .n{background:var(--signal)}
+.step b{display:block;font:400 25px/1.1 var(--serif);color:var(--atlantic)}
+.step span{display:block;font-size:15.5px;color:var(--ink-70);margin-top:6px}
+.route{position:relative;border-radius:22px;background:var(--clap);box-shadow:0 30px 60px -36px rgba(12,34,55,.55);overflow:hidden}
+.route svg.sk{display:block;width:100%;height:auto}
+.route .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:16px 18px;border-top:1px solid var(--rule);background:#fff}
+.route .bar .note{margin-left:auto}
+.mapbox{position:relative;aspect-ratio:16/10;background:var(--atlantic-2);display:none}
+.mapbox.show{display:block}
+.mapbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.maptabs{display:none;gap:8px}
+.maptabs.show{display:flex}
+.maptabs .chip{min-height:40px;padding:8px 14px;font-size:14px}
+.walker{offset-rotate:0deg}
+
+/* ============ THINGS TO DO ============ */
+.todo{background:#0f2b45;color:var(--clap);overflow:hidden}
+.todo::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(245,242,235,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(245,242,235,.05) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}
+.compass{position:absolute;right:-90px;top:60px;width:420px;height:420px;opacity:.12;pointer-events:none}
+.todo-head{display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap}
+.todo .filters .chip{background:transparent;color:var(--clap);box-shadow:inset 0 0 0 1.5px rgba(245,242,235,.3)}
+.todo .filters .chip:hover{box-shadow:inset 0 0 0 1.5px var(--brass-2)}
+.todo .filters .chip[aria-selected="true"]{background:var(--brass-2);color:var(--atlantic)}
+.todo .filters{display:none}
+.js .todo .filters{display:flex}
+.acts-grid{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.act{position:relative;border-radius:18px;background:rgba(245,242,235,.06);box-shadow:inset 0 0 0 1.5px rgba(245,242,235,.14);padding:24px 22px 22px;display:flex;flex-direction:column;min-height:270px;transition:background-color .3s,box-shadow .3s,transform .4s var(--ease),opacity .35s}
+.act:hover{background:rgba(245,242,235,.1);transform:translateY(-4px)}
+.act.hide{display:none}
+.act.picked{box-shadow:inset 0 0 0 2px var(--brass-2);background:rgba(215,180,122,.1)}
+.act svg.ic{width:54px;height:54px;color:var(--brass-2)}
+.act .t{font:600 11.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(245,242,235,.58);margin-top:18px}
+.act h3{font:400 27px/1.05 var(--serif);margin-top:10px}
+.act p{font-size:15px;color:rgba(245,242,235,.76);margin-top:10px}
+.act .pick{display:none;margin-top:auto;padding-top:18px}
+.js .act .pick{display:block}
+.pick button{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 14px;border-radius:999px;font:600 13.5px/1 var(--sans);box-shadow:inset 0 0 0 1.5px rgba(245,242,235,.34);transition:background-color .2s,color .2s,box-shadow .2s}
+.pick button:hover{box-shadow:inset 0 0 0 1.5px var(--brass-2)}
+.pick button[aria-pressed="true"]{background:var(--brass-2);color:var(--atlantic);box-shadow:none}
+.pick svg{width:16px;height:16px}
+.act.feature{grid-column:span 2;background:linear-gradient(0deg,rgba(6,16,30,.92),rgba(6,16,30,.25) 70%),url("assets/sail-dusk.webp") center/cover;min-height:300px}
+.picked-bar{display:none;margin-top:22px;align-items:center;gap:14px;flex-wrap:wrap;font-size:15px;color:rgba(245,242,235,.84)}
+.picked-bar.show{display:flex}
+
+/* ============ GALLERY ============ */
+.gallery{background:var(--clap)}
+.gal{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px;margin-top:44px}
+.gal button,.gal figure{position:relative;border-radius:14px;overflow:hidden;background:var(--fog);display:block;width:100%;height:100%;padding:0;text-align:left}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease),filter .4s;filter:saturate(.86) contrast(1.05) sepia(.08)}
+.gal .g1 img{filter:none}
+.gal button:hover img{transform:scale(1.05)}
+.gal .gc{position:absolute;left:12px;bottom:12px;font:600 11px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:#fff;background:rgba(9,27,45,.66);padding:7px 9px;border-radius:4px}
+.gal .plus{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;background:rgba(245,242,235,.92);color:var(--atlantic);display:grid;place-items:center;opacity:0;transform:scale(.8);transition:opacity .3s,transform .3s var(--ease)}
+.gal button:hover .plus,.gal button:focus-visible .plus{opacity:1;transform:none}
+.g1{grid-column:1/4;grid-row:1/4}.g2{grid-column:4/7;grid-row:1/3}.g3{grid-column:4/6;grid-row:3/6}.g4{grid-column:6/7;grid-row:3/6}.g5{grid-column:1/3;grid-row:4/6}.g6{grid-column:3/4;grid-row:4/6}
+.g4 img{object-position:40% 50%}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,14,26,.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:60px 70px 30px}
+.lb.open{display:flex;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.lb img{max-width:min(1200px,100%);max-height:calc(100vh - 160px);border-radius:10px;object-fit:contain;box-shadow:0 40px 80px -30px #000}
+.lb .lbcap{color:rgba(245,242,235,.86);font-size:15px;margin-top:16px;text-align:center;max-width:44rem}
+.lb .lbcap b{font-family:var(--serif);font-weight:400;font-size:20px;color:#fff;margin-right:8px}
+.lb button{position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(245,242,235,.12);color:#fff;display:grid;place-items:center;transition:background-color .2s}
+.lb button:hover{background:rgba(245,242,235,.24)}
+.lb button svg{width:22px;height:22px}
+.lb .x{top:16px;right:16px}.lb .pv{left:14px;top:50%;transform:translateY(-50%)}.lb .nx{right:14px;top:50%;transform:translateY(-50%)}
+.lb .cnt{position:absolute;top:30px;left:24px;font:600 12px/1 var(--sans);letter-spacing:.2em;color:rgba(245,242,235,.6)}
+
+/* ============ FAQ ============ */
+.faq{background:var(--fog-2)}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(32px,5vw,80px)}
+.faq details{border-top:1px solid var(--rule)}
+.faq details:last-child{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 4px;font:400 clamp(21px,1.8vw,26px)/1.15 var(--serif);color:var(--atlantic);transition:color .2s}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--signal)}
+.faq summary i{flex:none;width:34px;height:34px;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--rule);position:relative;transition:transform .35s var(--ease),background-color .25s}
+.faq summary i::before,.faq summary i::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:2px;background:var(--atlantic);transform:translate(-50%,-50%)}
+.faq summary i::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .35s var(--ease)}
+.faq details[open] summary i{background:var(--atlantic)}
+.faq details[open] summary i::before{background:#fff}
+.faq details[open] summary i::after{transform:translate(-50%,-50%) rotate(0);background:#fff}
+.faq .ans{padding:0 4px 24px;color:var(--ink-70);max-width:40rem}
+.faq .ans a{color:var(--atlantic);font-weight:600}
+
+/* ============ ENQUIRE ============ */
+.enquire{background:var(--atlantic);color:var(--clap);overflow:hidden}
+.enquire::after{content:"";position:absolute;left:0;right:0;top:0;height:6px;background:repeating-linear-gradient(90deg,var(--signal) 0 40px,var(--clap) 40px 80px)}
+.enq-grid{display:grid;grid-template-columns:.85fr 1.15fr;grid-template-areas:'intro helper' 'contacts helper';column-gap:clamp(32px,5vw,80px);align-items:start}
+.enq-intro{grid-area:intro}.enq-helper{grid-area:helper}.enq-grid .contacts{grid-area:contacts}
+@media (max-width:900px){.enq-grid{grid-template-areas:'intro' 'helper' 'contacts';row-gap:30px}}
+.helper{display:none;background:var(--clap);color:var(--ink);border-radius:22px;padding:clamp(22px,3vw,36px);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.js .helper{display:block}
+.hsteps{display:flex;gap:6px;margin-bottom:22px}
+.hsteps i{flex:1;height:4px;border-radius:2px;background:var(--rule);transition:background-color .3s}
+.hsteps i.on{background:var(--signal)}
+.hstep{display:none}
+.hstep.on{display:block;animation:roomIn .45s var(--ease)}
+.hstep h3{font:400 clamp(26px,2.4vw,34px)/1.08 var(--serif);color:var(--atlantic)}
+.hstep .sub{font-size:15px;color:var(--ink-70);margin-top:6px}
+.opts{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.opts.months{display:grid;grid-template-columns:repeat(4,1fr)}
+.opts.months .chip{justify-content:center;padding:10px 8px;font-size:14.5px}
+.hnav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:12px}
+.hnav .back{font:600 14px/1 var(--sans);color:var(--fog-ink);padding:12px 0;display:inline-flex;gap:6px;align-items:center}
+.hnav .back:hover{color:var(--atlantic)}
+.hnav .back[hidden]{display:none}
+.msg{margin-top:18px;background:#fff;border-radius:14px;box-shadow:inset 0 0 0 1.5px var(--rule);padding:18px 20px;font:400 15px/1.55 var(--sans);white-space:pre-wrap;color:var(--ink);max-height:300px;overflow:auto}
+.msg .subj{display:block;font-weight:600;color:var(--atlantic);border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:10px}
+.msg-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.privacy{font-size:13px;color:var(--fog-ink);margin-top:14px;display:flex;gap:8px;align-items:flex-start}
+.privacy svg{width:16px;height:16px;flex:none;margin-top:2px}
+.contacts{list-style:none;margin-top:34px;display:grid;gap:12px}
+.contact{display:flex;align-items:center;gap:14px;padding:14px 14px 14px 18px;border-radius:16px;background:rgba(245,242,235,.07);box-shadow:inset 0 0 0 1.5px rgba(245,242,235,.14)}
+.contact .ci{width:42px;height:42px;border-radius:50%;background:rgba(215,180,122,.16);color:var(--brass-2);display:grid;place-items:center;flex:none}
+.contact .ci svg{width:19px;height:19px}
+.contact a.v{text-decoration:none;font:500 clamp(17px,1.5vw,20px)/1.2 var(--sans);color:#fff}
+.contact a.v:hover{color:var(--brass-2)}
+.contact small{display:block;font:600 11px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(245,242,235,.55);margin-bottom:6px}
+.copy{margin-left:auto;display:none;align-items:center;gap:7px;min-height:44px;padding:10px 14px;border-radius:999px;font:600 13px/1 var(--sans);color:var(--clap);box-shadow:inset 0 0 0 1.5px rgba(245,242,235,.3);transition:background-color .2s,color .2s}
+.js .copy{display:inline-flex}
+.copy:hover{background:rgba(245,242,235,.1)}
+.copy svg{width:15px;height:15px}
+.copy.done{background:var(--brass-2);color:var(--atlantic);box-shadow:none}
+.helper .copy{color:var(--atlantic);box-shadow:inset 0 0 0 1.5px var(--rule);margin-left:0}
+.helper .copy.done{background:var(--atlantic);color:var(--clap)}
+.nojs-only{display:block}
+.js .nojs-only{display:none}
+.nojs-box{background:var(--clap);color:var(--ink);border-radius:22px;padding:32px}
+.nojs-box h3{font:400 30px/1.1 var(--serif);color:var(--atlantic)}
+.nojs-box p{margin:10px 0 20px;color:var(--ink-70)}
+.nojs-box .btn{margin:0 10px 10px 0}
+
+/* ============ FOOTER ============ */
+footer{background:#071827;color:rgba(245,242,235,.78);padding:72px 0 40px;font-size:15px}
+.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+.foot .mark b{font-size:34px}
+.foot h4{font:600 11.5px/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--brass-2);margin-bottom:14px}
+.foot a{text-decoration:none}
+.foot a:hover{color:#fff;text-decoration:underline}
+.foot p{line-height:1.75}
+.legal{margin-top:54px;padding-top:24px;border-top:1px solid rgba(245,242,235,.14);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:13.5px;color:rgba(245,242,235,.6)}
+
+/* ============ SMART BARS ============ */
+.dock{position:fixed;right:20px;bottom:20px;z-index:50;display:flex;gap:8px;padding:8px;border-radius:999px;background:rgba(9,27,45,.86);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 20px 50px -20px rgba(0,0,0,.6),inset 0 0 0 1px rgba(215,180,122,.25);transform:translateY(140%);transition:transform .5s var(--ease)}
+.dock.show{transform:none}
+.dock a,.dock button{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border-radius:999px;font:600 14px/1 var(--sans);color:var(--clap);text-decoration:none;transition:background-color .2s}
+.dock a:hover,.dock button:hover{background:rgba(245,242,235,.12)}
+.dock .go{background:var(--signal)}
+.dock .go:hover{background:#a92a21}
+.dock svg{width:17px;height:17px}
+.dock .copied{position:absolute;bottom:calc(100% + 10px);right:10px;background:var(--brass-2);color:var(--atlantic);font:600 13px/1 var(--sans);padding:9px 12px;border-radius:8px;opacity:0;transform:translateY(6px);transition:opacity .25s,transform .25s;pointer-events:none}
+.dock .copied.show{opacity:1;transform:none}
+.mbar{display:none}
+@media (max-width:860px){
+  .dock{display:none}
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:6px;position:fixed;left:10px;right:10px;bottom:max(10px,env(safe-area-inset-bottom));z-index:55;padding:6px;border-radius:18px;background:rgba(9,27,45,.92);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 14px 40px -12px rgba(0,0,0,.6),inset 0 0 0 1px rgba(215,180,122,.25)}
+  .mbar a{display:flex;align-items:center;justify-content:center;gap:7px;min-height:50px;border-radius:13px;font:600 14.5px/1 var(--sans);color:var(--clap);text-decoration:none}
+  .mbar a:active{background:rgba(245,242,235,.12)}
+  .mbar .go{background:var(--signal)}
+  .mbar svg{width:18px;height:18px}
+  footer{padding-bottom:110px}
+}
+
+html:not(.js) .explorer{grid-template-columns:1fr}
+html:not(.js) #roompanels{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+html:not(.js) .room{grid-template-columns:1fr;margin:0}
+html:not(.js) .room .art{min-height:260px}
+@media (max-width:900px){html:not(.js) #roompanels{grid-template-columns:1fr}}
+/* reveal */
+.js [data-r]{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.js [data-r].in{opacity:1;transform:none}
+
+/* responsive */
+@media (max-width:1060px){
+  .acts-grid{grid-template-columns:repeat(2,1fr)}
+  .room{grid-template-columns:1fr}
+  .room .art{min-height:300px}
+}
+@media (max-width:900px){
+  .rooms-head,.explorer,.arrive-grid,.faq-grid,.enq-grid,.foot{grid-template-columns:1fr}
+  .rooms-head{gap:0}
+  .keys{grid-template-columns:1fr 1fr}
+  .key{padding:12px}
+  .key .tag{width:34px;height:46px}
+  .key b{font-size:19px}
+  .key .pop{display:none}
+  .key:hover{transform:none}
+  .shore-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .ph--a{grid-column:1/-1;grid-row:auto;min-height:380px}
+  .ph--b{grid-column:1/-1;min-height:240px}
+  .ph--c{grid-column:1/2;min-height:220px}
+  .ph--d{grid-column:2/3;min-height:220px;padding:18px}
+  .ph--d b{font-size:44px}
+  .gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:130px;gap:10px}
+  .g1{grid-column:1/-1;grid-row:span 2}.g2{grid-column:1/-1;grid-row:span 2}.g3,.g4,.g5,.g6{grid-column:auto;grid-row:span 2}
+  .lb{padding:60px 12px 24px}
+  .lb .pv,.lb .nx{top:auto;bottom:14px;transform:none}
+  .lb img{max-height:calc(100vh - 220px)}
+  .lb .lbcap{margin-bottom:60px}
+}
+@media (max-width:560px){
+  .keys{grid-template-columns:1fr}
+  .opts.months{grid-template-columns:repeat(3,1fr)}
+  .contact{flex-wrap:wrap}
+  .contact a.v{font-size:17px}
+  .ph--c,.ph--d{grid-column:1/-1}
+  .ph--c{min-height:260px}
+  .ph--d{min-height:0;flex-direction:row;align-items:center;gap:18px}
+  .ph--d strong{font-size:20px}
+  .ph--d p{font-size:14px}
+  .acts-grid{grid-template-columns:1fr 1fr;gap:10px}
+  .act.feature{grid-column:1/-1;min-height:220px}
+  .act{padding:16px 14px;border-radius:14px}
+  .act svg.ic{width:38px;height:38px}
+  .act .t{font-size:10px;letter-spacing:.14em;margin-top:12px}
+  .act h3{font-size:21px}
+  .act p{font-size:13.5px}
+  .pick button{padding:9px 12px;font-size:12.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js [data-r]{opacity:1;transform:none}
+}
+</style>
+<script>document.documentElement.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('film-on');(function(){var w=0;function s(){if(innerWidth!==w){w=innerWidth;document.documentElement.style.setProperty('--vh',innerHeight/100+'px');}}s();addEventListener('resize',s);})();</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.5 4-2 1.4a12 12 0 0 0 6.4 6.4l1.4-2 4 1.5v2.6a2 2 0 0 1-2.2 2A17 17 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m3.8 7 8.2 6 8.2-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-6-6.5-11a6.5 6.5 0 0 1 13 0c0 5-6.5 11-6.5 11z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-snow" viewBox="0 0 24 24"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-bath" viewBox="0 0 24 24"><path d="M3 12h18v2a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5zM6 12V6a2 2 0 0 1 4 0" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="tagshape" viewBox="0 0 44 58"><path d="M6 14 22 3l16 11v38a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z" fill="#c9a46a"/><path d="M6 14 22 3l16 11v38a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3z" fill="none" stroke="#7d5f2f" stroke-width="1.2"/><circle cx="22" cy="14" r="3.6" fill="#0c2237"/><path d="M22 10.4V0" stroke="#7d5f2f" stroke-width="1.4"/></symbol>
+</svg>
+
+<a class="sr" href="#rooms">Skip to rooms</a>
+<div class="ribbon">Concept redesign by Jeig Torio · not the business's official website</div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Dunlop Inn, back to top">
+      <svg viewBox="0 0 30 34" aria-hidden="true"><path d="M12 9h6l2.6 22H9.4z" fill="#f5f2eb"/><path d="M11 5h8v4h-8z" fill="#c8372d"/><path d="M13 3h4l-2-2z" fill="#c8372d"/><path d="M12.4 14h5.2l.3 3h-5.8zM11.8 21h6.4l.3 3h-7z" fill="#c8372d" opacity=".9"/><path d="M3 31h24v2H3z" fill="#d7b47a"/></svg>
+      <span><b>Dunlop Inn</b><small>Baddeck · Cape Breton</small></span>
+    </a>
+    <nav class="main" aria-label="Sections">
+      <a href="#top">The harbour</a>
+      <a href="#rooms">Rooms</a>
+      <a href="#shore">Waterfront</a>
+      <a href="#arrive">Arriving</a>
+      <a href="#todo">Things to do</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn--red" href="#enquire"><svg><use href="#i-mail"/></svg>Enquire</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ FILM ============ -->
+<section class="film" id="top" aria-label="A day on the harbour at the Dunlop Inn">
+  <div class="stage" id="stage">
+    <picture>
+      <source media="(max-aspect-ratio: 17/20)" srcset="assets/poster-tall.webp">
+      <img class="poster" src="assets/poster.webp" alt="Illustration: a white clapboard inn with lit windows and deck lights at dusk, a sandy beach in front, a sailboat on the harbour and a lighthouse across the water" width="1600" height="900" fetchpriority="high">
+    </picture>
+    <canvas id="harbour" aria-hidden="true"></canvas>
+    <div class="scrim" aria-hidden="true"></div>
+    <ol class="beats" id="beats">
+      <li class="beat beat--hero on" data-b="0">
+        <span class="k"><i></i>First light · Baddeck harbour</span>
+        <h1>Baddeck's only <em>waterfront</em> accommodations.</h1>
+        <p>A small inn on the harbour at 552 Chebucto Street, with a private sandy beach and a waterside deck.</p>
+        <div class="hero-cta">
+          <a class="btn btn--red" href="#enquire"><svg><use href="#i-mail"/></svg>Plan a stay</a>
+          <a class="btn btn--line" href="#rooms">See the rooms<svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </li>
+      <li class="beat" data-b="1">
+        <span class="k"><i></i>Morning</span>
+        <h3>A private sandy beach.</h3>
+        <p>The inn has its own sandy beach on the harbour. Start the day with your feet in the sand.</p>
+        <span class="feat">Private beach</span>
+      </li>
+      <li class="beat" data-b="2">
+        <span class="k"><i></i>Midday</span>
+        <h3>The waterside deck.</h3>
+        <p>French doors open from the sunroom onto the upper waterside deck. There are two outdoor decks, and a living room inside.</p>
+        <span class="feat">Sunroom · two decks</span>
+      </li>
+      <li class="beat" data-b="3">
+        <span class="k"><i></i>Afternoon</span>
+        <h3>Out on the water.</h3>
+        <p>Sailing tours and puffin boat tours are on the inn's list of things to do, along with the Cabot Trail.</p>
+        <span class="feat">Sailing · puffins</span>
+      </li>
+      <li class="beat" data-b="4">
+        <span class="k"><i></i>Dusk</span>
+        <h3>The Lighthouse Room.</h3>
+        <p>A queen room with a wall of windows on the harbour and the lighthouse, and heated marble floors.</p>
+        <span class="feat">Wall of windows</span>
+      </li>
+      <li class="beat" data-b="5">
+        <span class="k"><i></i>Night</span>
+        <h3>“Summer home.”</h3>
+        <p>That is what guests who have come back again and again over the years call the inn. Your room is waiting by the water.</p>
+        <div class="hero-cta"><a class="btn btn--clap" href="#enquire"><svg><use href="#i-mail"/></svg>Ask about your dates</a></div>
+      </li>
+    </ol>
+    <div class="rail" id="rail" aria-label="Time of day">
+      <span class="line" aria-hidden="true"><b></b></span>
+      <button data-go="0" class="on"><span>First light</span><i></i></button>
+      <button data-go="1"><span>Morning</span><i></i></button>
+      <button data-go="2"><span>Midday</span><i></i></button>
+      <button data-go="3"><span>Afternoon</span><i></i></button>
+      <button data-go="4"><span>Dusk</span><i></i></button>
+      <button data-go="5"><span>Night</span><i></i></button>
+    </div>
+    <div class="cue" id="cue" aria-hidden="true"><span></span>Scroll · a day on the harbour</div>
+    <a class="skip" href="#rooms">Skip the film</a>
+    <p class="film-note">Illustration drawn in code · not the inn's actual building</p>
+  </div>
+</section>
+
+<div class="ticker" aria-label="At the Dunlop Inn"><div class="row"><ul><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#c8372d"/><rect x="0" y="7" width="26" height="6" fill="#f5f2eb"/></svg>Private sandy beach</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#f5f2eb"/><rect width="13" height="10" fill="#1b4569"/><rect x="13" y="10" width="13" height="10" fill="#1b4569"/></svg>Upper waterside deck</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><path d="M0 0h26L14 10l12 10H0z" fill="#d7b47a"/></svg>Sunroom with French doors</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#1b4569"/><rect x="8" y="5" width="10" height="10" fill="#f5f2eb"/></svg>The Lighthouse Room</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#f5f2eb"/><path d="M0 0 26 20M26 0 0 20" stroke="#c8372d" stroke-width="5"/></svg>552 Chebucto St, Baddeck</li></ul><ul aria-hidden="true"><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#c8372d"/><rect x="0" y="7" width="26" height="6" fill="#f5f2eb"/></svg>Private sandy beach</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#f5f2eb"/><rect width="13" height="10" fill="#1b4569"/><rect x="13" y="10" width="13" height="10" fill="#1b4569"/></svg>Upper waterside deck</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><path d="M0 0h26L14 10l12 10H0z" fill="#d7b47a"/></svg>Sunroom with French doors</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#1b4569"/><rect x="8" y="5" width="10" height="10" fill="#f5f2eb"/></svg>The Lighthouse Room</li><li><svg viewBox="0 0 26 20" aria-hidden="true"><rect width="26" height="20" fill="#f5f2eb"/><path d="M0 0 26 20M26 0 0 20" stroke="#c8372d" stroke-width="5"/></svg>552 Chebucto St, Baddeck</li></ul></div></div>
+
+<!-- ============ ROOMS ============ -->
+<section class="rooms sec" id="rooms">
+  <div class="wrap">
+    <div class="rooms-head">
+      <div data-r>
+        <span class="eyebrow">The rooms</span>
+        <h2 class="big">Pick your room<br>by the <em>water.</em></h2>
+      </div>
+      <p class="lede" data-r>Every room is air-conditioned with a private bath, and each one has its own look, from French country to nautical. Tap a room, or filter by what matters to you.</p>
+    </div>
+    <div class="filters" id="rfilters" role="group" aria-label="Filter rooms" data-r>
+      <span class="lab">Filter</span>
+      <button class="chip" data-f="queen" aria-pressed="false"><svg class="tick"><use href="#i-check"/></svg>Queen bed</button>
+      <button class="chip" data-f="ds" aria-pressed="false"><svg class="tick"><use href="#i-check"/></svg>Double + single</button>
+      <button class="chip" data-f="harbour" aria-pressed="false"><svg class="tick"><use href="#i-check"/></svg>Windows on the harbour</button>
+      <button class="chip" data-f="floors" aria-pressed="false"><svg class="tick"><use href="#i-check"/></svg>Heated marble floors</button>
+      <button class="chip" data-f="desk" aria-pressed="false"><svg class="tick"><use href="#i-check"/></svg>Writing desk</button>
+    </div>
+    <div class="explorer">
+      <div>
+        <ul class="keys" id="keys" role="tablist" aria-label="Rooms" aria-orientation="vertical">
+          <li><button class="key" role="tab" id="k-lighthouse" aria-controls="r-lighthouse" aria-selected="true" data-room="lighthouse" data-tags="queen harbour floors"><span class="tag"><svg><use href="#tagshape"/></svg></span><span><b>Lighthouse Room</b><small>Queen · harbour windows</small></span></button></li>
+          <li><button class="key" role="tab" id="k-mabel" aria-controls="r-mabel" aria-selected="false" data-room="mabel" data-tags="queen desk" tabindex="-1"><span class="tag"><svg><use href="#tagshape"/></svg></span><span><b>Mabel Bell Room</b><small>Queen · Victorian</small></span><span class="pop">Popular</span></button></li>
+          <li><button class="key" role="tab" id="k-spinnaker" aria-controls="r-spinnaker" aria-selected="false" data-room="spinnaker" data-tags="queen" tabindex="-1"><span class="tag"><svg><use href="#tagshape"/></svg></span><span><b>Spinnaker Room</b><small>Queen · nautical</small></span></button></li>
+          <li><button class="key" role="tab" id="k-garden" aria-controls="r-garden" aria-selected="false" data-room="garden" data-tags="queen" tabindex="-1"><span class="tag"><svg><use href="#tagshape"/></svg></span><span><b>Garden Room</b><small>Queen · English country</small></span></button></li>
+          <li><button class="key" role="tab" id="k-heuser" aria-controls="r-heuser" aria-selected="false" data-room="heuser" data-tags="ds" tabindex="-1"><span class="tag"><svg><use href="#tagshape"/></svg></span><span><b>Heuser Room</b><small>Double + single · French country</small></span></button></li>
+        </ul>
+        <p class="nomatch" id="nomatch" role="status">No room has all of those. Try fewer filters, or ask the inn: they know every room.</p>
+      </div>
+      <div id="roompanels">
+        <article class="room on" id="r-lighthouse" role="tabpanel" aria-labelledby="k-lighthouse">
+          <div class="art">
+            <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs><linearGradient id="rl-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1b2c52"/><stop offset=".6" stop-color="#8a5a72"/><stop offset="1" stop-color="#e58a5c"/></linearGradient></defs>
+              <rect width="400" height="420" fill="#0c2237"/>
+              <rect x="34" y="40" width="332" height="250" fill="url(#rl-sky)"/>
+              <rect x="34" y="206" width="332" height="84" fill="#203e5e"/>
+              <path d="M34 206h332" stroke="#f1b07a" stroke-width="1.5" opacity=".7"/>
+              <path d="M34 200c40-10 70-6 110-2s80 6 120-6 70-2 102 2v12H34z" fill="#2c2b45"/>
+              <g transform="translate(262 150)"><path d="M-6 50h12l-2-44h-8z" fill="#f5f2eb"/><path d="M-6 4h12v-8H-6z" fill="#c8372d"/><path d="M-4-4h8l-4-7z" fill="#c8372d"/><circle cx="0" cy="0" r="16" fill="#ffd98a" opacity=".25"/><circle cx="0" cy="0" r="4" fill="#fff4cf"/></g>
+              <path d="M262 150 L400 128 L400 168Z" fill="#fff2c4" opacity=".18"/>
+              <g stroke="#ffe3a8" stroke-width="2" opacity=".55"><path d="M250 236h24M244 248h36M252 260h20"/></g>
+              <g fill="none" stroke="#f5f2eb" stroke-width="7"><rect x="34" y="40" width="332" height="250"/><path d="M144.7 40v250M255.3 40v250M34 140h332"/></g>
+              <rect x="20" y="290" width="360" height="16" fill="#e9e3d6"/>
+              <rect x="0" y="306" width="400" height="114" fill="#ddd6c9"/>
+              <g stroke="#c9c0b0" stroke-width="1.5"><path d="M0 340h400M0 380h400M80 306l-30 114M200 306v114M320 306l30 114"/></g>
+              <g opacity=".5"><path d="M110 306c-20 30-60 60-100 114" stroke="#ffcf7a" stroke-width="40" opacity=".08"/></g>
+            </svg>
+            <span class="cap">Illustration · heated marble floors, a wall of windows</span>
+          </div>
+          <div class="body">
+            <span class="num">Room · Lighthouse</span>
+            <h3>Lighthouse Room</h3>
+            <p class="look">A wall of windows on the harbour and the lighthouse.</p>
+            <dl>
+              <div><dt>Bed</dt><dd>Queen</dd></div>
+              <div><dt>Feature</dt><dd>Wall of windows on the harbour and lighthouse</dd></div>
+              <div><dt>Floors</dt><dd>Heated marble floors</dd></div>
+              <div><dt>Comfort</dt><dd>Air-conditioned · private bath</dd></div>
+            </dl>
+            <div class="acts"><a class="btn btn--navy" href="#enquire" data-ask="lighthouse"><svg><use href="#i-mail"/></svg>Ask about this room</a></div>
+          </div>
+        </article>
+        <article class="room" id="r-mabel" role="tabpanel" aria-labelledby="k-mabel">
+          <div class="art">
+            <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="420" fill="#3a2a3c"/>
+              <g opacity=".22" fill="#d7b47a"><circle cx="40" cy="40" r="3"/><circle cx="120" cy="40" r="3"/><circle cx="200" cy="40" r="3"/><circle cx="280" cy="40" r="3"/><circle cx="360" cy="40" r="3"/><circle cx="80" cy="100" r="3"/><circle cx="160" cy="100" r="3"/><circle cx="240" cy="100" r="3"/><circle cx="320" cy="100" r="3"/><circle cx="40" cy="160" r="3"/><circle cx="120" cy="160" r="3"/><circle cx="200" cy="160" r="3"/><circle cx="280" cy="160" r="3"/><circle cx="360" cy="160" r="3"/></g>
+              <rect x="0" y="300" width="400" height="120" fill="#5b3b2c"/>
+              <g transform="translate(70 196)"><rect x="0" y="40" width="260" height="14" rx="3" fill="#7a4c33"/><rect x="10" y="54" width="10" height="96" fill="#6a412b"/><rect x="240" y="54" width="10" height="96" fill="#6a412b"/><rect x="150" y="54" width="90" height="40" fill="#6a412b"/><rect x="160" y="64" width="70" height="20" rx="2" fill="#7a4c33"/><circle cx="195" cy="74" r="3" fill="#d7b47a"/>
+                <rect x="40" y="18" width="80" height="22" fill="#f5f2eb" transform="rotate(-6 80 29)"/><path d="M50 24h56M50 30h50" stroke="#b9aea0" stroke-width="1.5" transform="rotate(-6 80 29)"/>
+                <path d="M170 38c0-14 6-22 16-22s16 8 16 22z" fill="#0c2237"/><path d="M186 16l14-50" stroke="#f5f2eb" stroke-width="3" stroke-linecap="round"/><path d="M200-34c-10 12-14 26-12 40 8-10 14-24 12-40z" fill="#f5f2eb"/>
+                <path d="M228 40v-30M220 10h16" stroke="#d7b47a" stroke-width="3"/><circle cx="228" cy="2" r="10" fill="#ffd98a" opacity=".35"/><path d="M222 10c0-8 3-14 6-14s6 6 6 14z" fill="#f2cf90"/></g>
+            </svg>
+            <span class="cap">Illustration · Victorian room with a writing desk</span>
+          </div>
+          <div class="body">
+            <span class="num">Room · Mabel Bell</span>
+            <h3>Mabel Bell Room</h3>
+            <p class="look">Victorian, with a writing desk.</p>
+            <dl>
+              <div><dt>Bed</dt><dd>Queen</dd></div>
+              <div><dt>Style</dt><dd>Victorian</dd></div>
+              <div><dt>Feature</dt><dd>Writing desk</dd></div>
+              <div><dt>Comfort</dt><dd>Air-conditioned · private bath</dd></div>
+            </dl>
+            <q>One of our most popular rooms.</q>
+            <div class="acts"><a class="btn btn--navy" href="#enquire" data-ask="mabel"><svg><use href="#i-mail"/></svg>Ask about this room</a></div>
+          </div>
+        </article>
+        <article class="room" id="r-spinnaker" role="tabpanel" aria-labelledby="k-spinnaker">
+          <div class="art">
+            <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="420" fill="#123452"/>
+              <g stroke="#f5f2eb" stroke-width="1" opacity=".08"><path d="M0 60h400M0 120h400M0 180h400M0 240h400M0 300h400M0 360h400"/></g>
+              <path d="M200 60v280" stroke="#d7b47a" stroke-width="4"/>
+              <path d="M204 70c110 20 150 110 120 210-40-30-80-40-120-36z" fill="#c8372d"/>
+              <path d="M204 70c70 30 92 110 70 186" fill="none" stroke="#f5f2eb" stroke-width="10" opacity=".9"/>
+              <path d="M204 70c40 40 46 120 30 176" fill="none" stroke="#0c2237" stroke-width="8" opacity=".55"/>
+              <path d="M196 90 120 300h76z" fill="#f5f2eb"/>
+              <path d="M110 330h200l-24 30H134z" fill="#f5f2eb"/><path d="M118 342h184" stroke="#c8372d" stroke-width="5"/>
+              <g fill="none" stroke="#d7b47a" stroke-width="3" opacity=".8"><circle cx="70" cy="80" r="22"/><path d="M70 58v44M48 80h44"/></g>
+            </svg>
+            <span class="cap">Illustration · nautical room</span>
+          </div>
+          <div class="body">
+            <span class="num">Room · Spinnaker</span>
+            <h3>Spinnaker Room</h3>
+            <p class="look">A nautical room.</p>
+            <dl>
+              <div><dt>Bed</dt><dd>Queen</dd></div>
+              <div><dt>Style</dt><dd>Nautical</dd></div>
+              <div><dt>Bath</dt><dd>Private bath, just off the hallway</dd></div>
+              <div><dt>Comfort</dt><dd>Air-conditioned</dd></div>
+            </dl>
+            <div class="acts"><a class="btn btn--navy" href="#enquire" data-ask="spinnaker"><svg><use href="#i-mail"/></svg>Ask about this room</a></div>
+          </div>
+        </article>
+        <article class="room" id="r-garden" role="tabpanel" aria-labelledby="k-garden">
+          <div class="art">
+            <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="420" fill="#25402f"/>
+              <g fill="none" stroke="#9fbf8a" stroke-width="3" opacity=".9"><path d="M200 400C190 300 210 220 196 120"/><path d="M198 300c-40-10-70-40-80-80 40 6 70 30 80 80zM200 250c40-14 66-46 74-86-40 10-66 40-74 86zM197 190c-30-14-50-40-54-72 30 8 48 34 54 72z" fill="#5f8a5a"/></g>
+              <g transform="translate(196 104)"><circle r="40" fill="#c8586b"/><circle r="28" fill="#d97384"/><circle r="16" fill="#e897a2"/><path d="M-8-6c6-10 18-6 16 4" stroke="#a63e52" stroke-width="3" fill="none"/></g>
+              <g transform="translate(90 80)" opacity=".85"><circle r="20" fill="#f5f2eb"/><circle r="8" fill="#d7b47a"/></g>
+              <g transform="translate(320 200)" opacity=".85"><circle r="16" fill="#f5f2eb"/><circle r="6" fill="#d7b47a"/></g>
+              <g transform="translate(300 70)" opacity=".7"><circle r="12" fill="#e897a2"/></g>
+            </svg>
+            <span class="cap">Illustration · English country room</span>
+          </div>
+          <div class="body">
+            <span class="num">Room · Garden</span>
+            <h3>Garden Room</h3>
+            <p class="look">An English country room.</p>
+            <dl>
+              <div><dt>Bed</dt><dd>Queen</dd></div>
+              <div><dt>Style</dt><dd>English country</dd></div>
+              <div><dt>Comfort</dt><dd>Air-conditioned · private bath</dd></div>
+            </dl>
+            <div class="acts"><a class="btn btn--navy" href="#enquire" data-ask="garden"><svg><use href="#i-mail"/></svg>Ask about this room</a></div>
+          </div>
+        </article>
+        <article class="room" id="r-heuser" role="tabpanel" aria-labelledby="k-heuser">
+          <div class="art">
+            <svg viewBox="0 0 400 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <rect width="400" height="420" fill="#4a4f74"/>
+              <rect x="110" y="70" width="180" height="230" fill="#f0e6d2"/>
+              <g fill="#7f86b5"><rect x="62" y="70" width="44" height="230"/><rect x="294" y="70" width="44" height="230"/></g>
+              <g stroke="#5d6494" stroke-width="3"><path d="M62 100h44M62 130h44M62 160h44M62 190h44M62 220h44M62 250h44M62 280h44M294 100h44M294 130h44M294 160h44M294 190h44M294 220h44M294 250h44M294 280h44"/></g>
+              <path d="M200 70v230M110 185h180" stroke="#f5f2eb" stroke-width="8"/>
+              <rect x="110" y="70" width="180" height="230" fill="none" stroke="#f5f2eb" stroke-width="10"/>
+              <rect x="96" y="300" width="208" height="16" fill="#f5f2eb"/>
+              <g transform="translate(200 300)"><rect x="-22" y="-30" width="44" height="30" rx="4" fill="#c8a46a"/><g stroke="#8e7fc2" stroke-width="4" stroke-linecap="round"><path d="M-12-30v-34M0-30v-40M12-30v-32"/></g><g fill="#a593d9"><circle cx="-12" cy="-66" r="5"/><circle cx="-12" cy="-56" r="4"/><circle cx="0" cy="-74" r="5"/><circle cx="0" cy="-62" r="4"/><circle cx="12" cy="-64" r="5"/><circle cx="12" cy="-54" r="4"/></g></g>
+              <rect x="0" y="316" width="400" height="104" fill="#3a3e5e"/>
+            </svg>
+            <span class="cap">Illustration · French country room</span>
+          </div>
+          <div class="body">
+            <span class="num">Room · Heuser</span>
+            <h3>Heuser Room</h3>
+            <p class="look">A French country room.</p>
+            <dl>
+              <div><dt>Beds</dt><dd>One double and one single</dd></div>
+              <div><dt>Style</dt><dd>French country</dd></div>
+              <div><dt>Comfort</dt><dd>Air-conditioned · private bath</dd></div>
+            </dl>
+            <div class="acts"><a class="btn btn--navy" href="#enquire" data-ask="heuser"><svg><use href="#i-mail"/></svg>Ask about this room</a></div>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div class="allrooms" data-r>
+      <span><svg><use href="#i-snow"/></svg>Every room air-conditioned</span>
+      <span><svg><use href="#i-bath"/></svg>Every room with a private bath</span>
+      <span class="note">Filters use only what the inn lists for each room. Ask about anything else.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WATERFRONT ============ -->
+<section class="shore sec on-dark" id="shore">
+  <div class="wrap">
+    <span class="eyebrow" data-r>The waterfront</span>
+    <p class="quote" data-r>“The Dunlop Inn offers Baddeck's only <span>waterfront</span> accommodations, with a private sandy beach and waterside deck.”</p>
+    <p class="quote-by" data-r>In the inn's own words</p>
+    <div class="shore-grid">
+      <figure class="ph ph--a" data-r>
+        <img src="assets/beach.webp" alt="Concept photo: a quiet sandy shoreline and calm water in soft morning light" loading="lazy" width="1200" height="1050">
+        <figcaption><b>A private sandy beach</b>Right on the harbour, for the inn's guests.<small>Concept photo</small></figcaption>
+      </figure>
+      <figure class="ph ph--b" data-r>
+        <img src="assets/deck.webp" alt="Concept photo: a wide deck with lounge chairs and wicker seats beside the water on a sunny day" loading="lazy" width="1200" height="801">
+        <figcaption><b>Two outdoor decks</b>Including the upper waterside deck.<small>Concept photo</small></figcaption>
+      </figure>
+      <figure class="ph ph--c" data-r>
+        <img src="assets/sunroom.webp" alt="Concept photo: a bright sunroom with tall paned windows, wicker chairs and plants" loading="lazy" width="1000" height="667">
+        <figcaption><b>The sunroom</b>French doors to the deck.<small>Concept photo</small></figcaption>
+      </figure>
+      <div class="ph ph--d" data-r>
+        <b>4–5</b>
+        <div><strong>minutes' walk from check-in</strong><p>Check in at our sister property, the Telegraph House, then stroll over.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARRIVING ============ -->
+<section class="arrive sec" id="arrive">
+  <div class="wrap">
+    <div data-r>
+      <span class="eyebrow">Arriving</span>
+      <h2 class="big">Check in up the street,<br>then walk to the <em>water.</em></h2>
+    </div>
+    <div class="arrive-grid">
+      <div>
+        <p class="lede" data-r>Guests of the Dunlop Inn check in at its sister property, the Telegraph House &amp; Motel. Same owner, two addresses on Chebucto Street.</p>
+        <ol class="steps" id="steps">
+          <li><button class="step" data-step="1" aria-pressed="true"><span class="n">1</span><span><b>Head to the Telegraph House</b><span>479 Chebucto St, Baddeck. This is where you check in.</span></span></button></li>
+          <li><button class="step" data-step="2" aria-pressed="false"><span class="n">2</span><span><b>Check in there</b><span>The Telegraph House &amp; Motel is our sister property, run by the same owner.</span></span></button></li>
+          <li><button class="step" data-step="3" aria-pressed="false"><span class="n">3</span><span><b>A 4–5 minute walk</b><span>From the Telegraph House to the Dunlop Inn at 552 Chebucto St.</span></span></button></li>
+          <li><button class="step" data-step="4" aria-pressed="false"><span class="n">4</span><span><b>Your room by the water</b><span>Baddeck's only waterfront accommodations: beach, decks and sunroom.</span></span></button></li>
+        </ol>
+      </div>
+      <div class="route" data-r>
+        <svg class="sk" id="routesvg" viewBox="0 0 640 400" role="img" aria-label="Sketch, not to scale: from the Telegraph House at 479 Chebucto St, a 4 to 5 minute walk along Chebucto St to the Dunlop Inn at 552 Chebucto St, by the harbour">
+          <rect width="640" height="400" fill="#f5f2eb"/>
+          <path d="M0 300C120 286 210 312 330 300s230-30 310-18V400H0z" fill="#c9d6de"/>
+          <path d="M0 312C120 298 210 324 330 312s230-30 310-18" fill="none" stroke="#9fb3c0" stroke-width="2" stroke-dasharray="2 8" stroke-linecap="round"/>
+          <text x="560" y="360" font-family="Hanken Grotesk, sans-serif" font-size="13" font-weight="600" letter-spacing="3" fill="#5b6b78" text-anchor="end">HARBOUR</text>
+          <path d="M40 190H600" stroke="#dcd5c7" stroke-width="30" stroke-linecap="round"/>
+          <text x="320" y="230" font-family="Hanken Grotesk, sans-serif" font-size="12" font-weight="600" letter-spacing="3" fill="#8b8676" text-anchor="middle">CHEBUCTO ST</text>
+          <path id="walkpath" d="M150 176C230 150 380 150 482 214" fill="none" stroke="#c8372d" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round"/>
+          <g id="rs1" transform="translate(110 110)">
+            <rect x="-38" y="0" width="76" height="62" fill="#ffffff" stroke="#0c2237" stroke-width="2"/>
+            <path d="M-46 2 0-30 46 2z" fill="#0c2237"/>
+            <g fill="#b9cbd8"><rect x="-28" y="14" width="14" height="16"/><rect x="-7" y="14" width="14" height="16"/><rect x="14" y="14" width="14" height="16"/></g>
+            <rect x="-7" y="40" width="14" height="22" fill="#c8372d"/>
+            <text x="0" y="-44" font-family="Gloock, serif" font-size="19" fill="#0c2237" text-anchor="middle">Telegraph House</text>
+            <text x="0" y="88" font-family="Hanken Grotesk, sans-serif" font-size="12.5" fill="#5b6b78" text-anchor="middle">479 Chebucto St · check in</text>
+          </g>
+          <g id="rs3" transform="translate(520 196)">
+            <rect x="-44" y="-6" width="88" height="70" fill="#ffffff" stroke="#0c2237" stroke-width="2"/>
+            <path d="M-52-4 0-40 52-4z" fill="#3b4b5c"/>
+            <g stroke="#e1ddd2" stroke-width="1"><path d="M-44 6h88M-44 16h88M-44 26h88M-44 36h88M-44 46h88M-44 56h88"/></g>
+            <g fill="#ffcf7a"><rect x="-32" y="8" width="16" height="18"/><rect x="-8" y="8" width="16" height="18"/><rect x="16" y="8" width="16" height="18"/></g>
+            <path d="M-60 64h120" stroke="#b8925a" stroke-width="5"/>
+            <text x="0" y="-52" font-family="Gloock, serif" font-size="19" fill="#0c2237" text-anchor="middle">Dunlop Inn</text>
+            <text x="0" y="88" font-family="Hanken Grotesk, sans-serif" font-size="12.5" fill="#13263a" text-anchor="middle">552 Chebucto St</text>
+          </g>
+          <g id="walker"><circle r="11" fill="#c8372d" opacity=".2"/><circle r="6" fill="#c8372d"/></g>
+          <g transform="translate(316 112)"><rect x="-62" y="-17" width="124" height="34" rx="17" fill="#0c2237"/><text x="0" y="5" font-family="Hanken Grotesk, sans-serif" font-size="13.5" font-weight="600" fill="#f5f2eb" text-anchor="middle">4–5 min walk</text></g>
+          <text x="20" y="388" font-family="Hanken Grotesk, sans-serif" font-size="11.5" fill="#5b6b78">Sketch, not to scale</text>
+        </svg>
+        <div class="mapbox" id="mapbox"></div>
+        <div class="bar">
+          <button class="btn btn--navy" id="showmap" type="button"><svg><use href="#i-pin"/></svg>Show map</button>
+          <div class="maptabs" id="maptabs" role="group" aria-label="Map shows">
+            <button class="chip" aria-pressed="true" data-q="Dunlop+Inn+Baddeck">Dunlop Inn</button>
+            <button class="chip" aria-pressed="false" data-q="Telegraph+House+479+Chebucto+St+Baddeck">Telegraph House</button>
+          </div>
+          <a class="btn btn--line" href="https://www.google.com/maps/search/?api=1&amp;query=Dunlop+Inn+Baddeck" target="_blank" rel="noopener">Get directions<svg><use href="#i-arrow"/></svg></a>
+          <span class="note" id="mapnote">The map loads only when you tap.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ THINGS TO DO ============ -->
+<section class="todo sec on-dark" id="todo">
+  <svg class="compass" viewBox="0 0 200 200" aria-hidden="true"><g fill="none" stroke="#f5f2eb" stroke-width="1.2"><circle cx="100" cy="100" r="96"/><circle cx="100" cy="100" r="80"/><circle cx="100" cy="100" r="40"/></g><path d="M100 4 112 100 100 196 88 100z" fill="#f5f2eb"/><path d="M4 100 100 88 196 100 100 112z" fill="#f5f2eb" opacity=".6"/></svg>
+  <div class="wrap">
+    <div class="todo-head">
+      <div data-r>
+        <span class="eyebrow">From here</span>
+        <h2 class="big">Things to do<br>from the <em>harbour.</em></h2>
+      </div>
+      <p class="lede" data-r>From the inn's own activities list. Mark the ones you're curious about and they'll be added to your enquiry, so the inn can share tips.</p>
+    </div>
+    <div class="filters" id="tfilters" role="tablist" aria-label="Filter things to do" data-r>
+      <button class="chip" role="tab" aria-selected="true" data-c="all">All</button>
+      <button class="chip" role="tab" aria-selected="false" data-c="water">On the water</button>
+      <button class="chip" role="tab" aria-selected="false" data-c="road">Drives &amp; outdoors</button>
+      <button class="chip" role="tab" aria-selected="false" data-c="history">History</button>
+      <button class="chip" role="tab" aria-selected="false" data-c="golf">Golf</button>
+    </div>
+    <ul class="acts-grid" id="acts">
+      <li class="act feature" data-c="water" data-r>
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M27 6v34M29 9c10 6 14 16 12 28H29zM25 13 13 37h12zM8 42h38l-5 6H13z"/></g></svg>
+        <span class="t">On the water</span>
+        <h3>Sailing tours</h3>
+        <p>Time out on the water under sail.</p>
+        <div class="pick"><button type="button" aria-pressed="false" data-act="sailing tours"><svg><use href="#i-plus"/></svg><span>Ask for tips</span></button></div>
+      </li>
+      <li class="act" data-c="water" data-r>
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M18 40c-6-4-8-14-4-22 3-6 9-9 15-8 7 1 11 7 11 14 0 9-6 17-14 18"/><path d="M26 10c6-1 10 3 10 8"/><circle cx="31" cy="17" r="1.6" fill="currentColor"/><path d="M36 18c6 0 9 2 10 4-3 1-7 1-10-1" fill="currentColor"/><path d="M8 46h38"/></g></svg>
+        <span class="t">On the water</span>
+        <h3>Puffin boat tours</h3>
+        <p>Boat trips out to see puffins.</p>
+        <div class="pick"><button type="button" aria-pressed="false" data-act="puffin boat tours"><svg><use href="#i-plus"/></svg><span>Ask for tips</span></button></div>
+      </li>
+      <li class="act" data-c="road" data-r>
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 44c10-2 8-12 18-14s12 6 22-4"/><path d="M6 36c8-2 8-10 16-12s12 4 20-4" stroke-dasharray="2 5"/><path d="M14 14l6-8 6 8M30 16l5-7 5 7"/></g></svg>
+        <span class="t">Drives &amp; outdoors</span>
+        <h3>Cabot Trail</h3>
+        <p>The famous scenic drive around northern Cape Breton.</p>
+        <div class="pick"><button type="button" aria-pressed="false" data-act="the Cabot Trail"><svg><use href="#i-plus"/></svg><span>Ask for tips</span></button></div>
+      </li>
+      <li class="act" data-c="road" data-r>
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 44 18 20l8 12 8-16 16 28z"/><path d="M14 27l4-7 4 6"/></g></svg>
+        <span class="t">Drives &amp; outdoors</span>
+        <h3>Cape Breton Highlands</h3>
+        <p>Highland and coastal scenery in the north of the island.</p>
+        <div class="pick"><button type="button" aria-pressed="false" data-act="the Cape Breton Highlands"><svg><use href="#i-plus"/></svg><span>Ask for tips</span></button></div>
+      </li>
+      <li class="act" data-c="history" data-r>
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M8 20 27 8l19 12zM10 46h34M12 20v22M21 20v22M33 20v22M42 20v22M8 46v-4h38v4"/></g></svg>
+        <span class="t">History</span>
+        <h3>Alexander Graham Bell Museum</h3>
+        <p>A museum about the inventor and his work.</p>
+        <div class="pick"><button type="button" aria-pressed="false" data-act="the Alexander Graham Bell Museum"><svg><use href="#i-plus"/></svg><span>Ask for tips</span></button></div>
+      </li>
+      <li class="act" data-c="history" data-r>
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M6 44V24h6v-6h6v6h6v-6h6v6h6v-6h6v6h6v20zM22 44V34a5 5 0 0 1 10 0v10"/><path d="M27 18V6l8 3-8 3"/></g></svg>
+        <span class="t">History</span>
+        <h3>Fortress Louisbourg</h3>
+        <p>A historic fortress on Cape Breton's Atlantic coast.</p>
+        <div class="pick"><button type="button" aria-pressed="false" data-act="Fortress Louisbourg"><svg><use href="#i-plus"/></svg><span>Ask for tips</span></button></div>
+      </li>
+      <li class="act" data-c="golf" data-r>
+        <svg class="ic" viewBox="0 0 54 54" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M24 44V8l14 6-14 6"/><ellipse cx="24" cy="44" rx="16" ry="4"/><circle cx="36" cy="40" r="2" fill="currentColor"/></g></svg>
+        <span class="t">Golf</span>
+        <h3>Bell Bay golf</h3>
+        <p>A round of golf at Bell Bay.</p>
+        <div class="pick"><button type="button" aria-pressed="false" data-act="Bell Bay golf"><svg><use href="#i-plus"/></svg><span>Ask for tips</span></button></div>
+      </li>
+    </ul>
+    <div class="picked-bar" id="pickedbar" role="status"><span id="pickedtxt"></span><a class="btn btn--clap" href="#enquire">Go to my enquiry<svg><use href="#i-arrow"/></svg></a></div>
+    <p class="note" style="margin-top:26px" data-r>Ask us how best to reach each one when you enquire. Sailing photo is a concept photo.</p>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="gallery sec" id="gallery">
+  <div class="wrap">
+    <div data-r>
+      <span class="eyebrow">Gallery</span>
+      <h2 class="big">Sand, decks and <em>harbour</em> light.</h2>
+    </div>
+    <div class="gal" id="gal">
+      <button class="g1" data-i="0" aria-label="Open picture 1: the harbour at dusk"><img src="assets/poster.webp" alt="" loading="lazy"><span class="gc">Concept illustration</span><span class="plus"><svg width="18" height="18"><use href="#i-plus"/></svg></span></button>
+      <button class="g2" data-i="1" aria-label="Open picture 2: sandy shoreline"><img src="assets/beach.webp" alt="" loading="lazy" style="object-position:50% 70%"><span class="gc">Concept photo</span><span class="plus"><svg width="18" height="18"><use href="#i-plus"/></svg></span></button>
+      <button class="g3" data-i="2" aria-label="Open picture 3: waterside deck"><img src="assets/deck.webp" alt="" loading="lazy"><span class="gc">Concept photo</span><span class="plus"><svg width="18" height="18"><use href="#i-plus"/></svg></span></button>
+      <button class="g4" data-i="3" aria-label="Open picture 4: sunroom"><img src="assets/sunroom.webp" alt="" loading="lazy"><span class="gc">Concept photo</span><span class="plus"><svg width="18" height="18"><use href="#i-plus"/></svg></span></button>
+      <button class="g5" data-i="4" aria-label="Open picture 5: bedroom"><img src="assets/room.webp" alt="" loading="lazy"><span class="gc">Concept photo</span><span class="plus"><svg width="18" height="18"><use href="#i-plus"/></svg></span></button>
+      <button class="g6" data-i="5" aria-label="Open picture 6: sailboat at sunset"><img src="assets/sail-dusk.webp" alt="" loading="lazy"><span class="gc">Concept photo</span><span class="plus"><svg width="18" height="18"><use href="#i-plus"/></svg></span></button>
+    </div>
+    <p class="note" style="margin-top:18px">Photos are stock concept placeholders, not the inn itself. The harbour scene is an illustration.</p>
+  </div>
+</section>
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Picture viewer" hidden>
+  <span class="cnt" id="lbcnt"></span>
+  <img id="lbimg" src="" alt="">
+  <p class="lbcap" id="lbcap"></p>
+  <button class="x" id="lbx" aria-label="Close"><svg><use href="#i-x"/></svg></button>
+  <button class="pv" id="lbp" aria-label="Previous picture"><svg><use href="#i-back"/></svg></button>
+  <button class="nx" id="lbn" aria-label="Next picture"><svg><use href="#i-arrow"/></svg></button>
+</div>
+
+<!-- ============ FAQ ============ -->
+<section class="faq sec" id="faq">
+  <div class="wrap faq-grid">
+    <div data-r>
+      <span class="eyebrow">Good to know</span>
+      <h2 class="big">Before you <em>pack.</em></h2>
+      <p class="lede">Short answers to the questions guests ask most. Anything else: call or email the inn.</p>
+    </div>
+    <div data-r>
+      <details><summary>Where do I check in?<i></i></summary><div class="ans">At our sister property, the Telegraph House &amp; Motel, 479 Chebucto St. From there it's a 4–5 minute walk to the Dunlop Inn at 552 Chebucto St.</div></details>
+      <details><summary>Is there a beach?<i></i></summary><div class="ans">Yes. The inn has a private sandy beach and a waterside deck: Baddeck's only waterfront accommodations.</div></details>
+      <details><summary>Do the rooms have private bathrooms?<i></i></summary><div class="ans">Yes. Every room has a private bath (in the Spinnaker Room it is just off the hallway), and every room is air-conditioned.</div></details>
+      <details><summary>Can I bring my pet?<i></i></summary><div class="ans">Sorry, no pets.</div></details>
+      <details><summary>Can I cook at the inn?<i></i></summary><div class="ans">No, there is no cooking at the inn.</div></details>
+      <details><summary>How can I pay?<i></i></summary><div class="ans">Cash, Visa or Mastercard.</div></details>
+      <details><summary>What are the rates, and when are you open?<i></i></summary><div class="ans">Ask us: email <a href="mailto:waterside@dunlopinn.ca">waterside@dunlopinn.ca</a> or call <a href="tel:+19022953355">902-295-3355</a> with your rough dates.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENQUIRE ============ -->
+<section class="enquire sec on-dark" id="enquire">
+  <div class="wrap enq-grid">
+    <div class="enq-intro" data-r>
+      <span class="eyebrow">Enquire</span>
+      <h2 class="big">Three taps to<br>a ready <em>email.</em></h2>
+      <p class="lede">Choose a room, a rough month and how many are coming. We'll write the email for you, ready to send from your own email app. Or simply call.</p>
+    </div>
+      <ul class="contacts" data-r>
+        <li class="contact"><span class="ci"><svg><use href="#i-phone"/></svg></span><span><small>Phone</small><a class="v" href="tel:+19022953355">902-295-3355</a></span><button class="copy" data-copy="902-295-3355" type="button"><svg><use href="#i-copy"/></svg><span>Copy</span></button></li>
+        <li class="contact"><span class="ci"><svg><use href="#i-phone"/></svg></span><span><small>Toll free</small><a class="v" href="tel:+18882901988">888-290-1988</a></span><button class="copy" data-copy="888-290-1988" type="button"><svg><use href="#i-copy"/></svg><span>Copy</span></button></li>
+        <li class="contact"><span class="ci"><svg><use href="#i-mail"/></svg></span><span><small>Email</small><a class="v" href="mailto:waterside@dunlopinn.ca">waterside@dunlopinn.ca</a></span><button class="copy" data-copy="waterside@dunlopinn.ca" type="button"><svg><use href="#i-copy"/></svg><span>Copy</span></button></li>
+        <li class="contact"><span class="ci"><svg><use href="#i-pin"/></svg></span><span><small>Address</small><span class="v" style="font:500 17px/1.3 var(--sans);color:#fff">552 Chebucto St, Baddeck, NS B0E 1B0</span></span></li>
+      </ul>
+    <div class="enq-helper">
+      <div class="helper" id="helper" data-r>
+        <div class="hsteps" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i></div>
+        <div class="hstep on" data-s="1">
+          <h3>Which room?</h3>
+          <p class="sub">Step 1 of 3</p>
+          <div class="opts" id="o-room">
+            <button class="chip" data-v="Lighthouse Room" data-key="lighthouse">Lighthouse Room</button>
+            <button class="chip" data-v="Mabel Bell Room" data-key="mabel">Mabel Bell Room</button>
+            <button class="chip" data-v="Spinnaker Room" data-key="spinnaker">Spinnaker Room</button>
+            <button class="chip" data-v="Garden Room" data-key="garden">Garden Room</button>
+            <button class="chip" data-v="Heuser Room" data-key="heuser">Heuser Room</button>
+            <button class="chip" data-v="Any room, whichever is free" data-key="any">Any room / not sure</button>
+          </div>
+        </div>
+        <div class="hstep" data-s="2">
+          <h3>Roughly when?</h3>
+          <p class="sub">Step 2 of 3 · pick a month</p>
+          <div class="opts months" id="o-month"></div>
+        </div>
+        <div class="hstep" data-s="3">
+          <h3>How many guests?</h3>
+          <p class="sub">Step 3 of 3</p>
+          <div class="opts" id="o-guests">
+            <button class="chip" data-v="1">1</button>
+            <button class="chip" data-v="2">2</button>
+            <button class="chip" data-v="3">3</button>
+            <button class="chip" data-v="4 or more">4 or more</button>
+          </div>
+        </div>
+        <div class="hstep" data-s="4">
+          <h3>Your email is ready.</h3>
+          <p class="sub">To waterside@dunlopinn.ca</p>
+          <div class="msg" id="msg" tabindex="0" aria-label="Composed message"></div>
+          <div class="msg-acts">
+            <a class="btn btn--red" id="mailgo" href="mailto:waterside@dunlopinn.ca"><svg><use href="#i-mail"/></svg>Open in my email app</a>
+            <button class="copy" id="copymsg" type="button"><svg><use href="#i-copy"/></svg><span>Copy message</span></button>
+          </div>
+        </div>
+        <div class="hnav">
+          <button class="back" id="hback" type="button" hidden><svg width="16" height="16"><use href="#i-back"/></svg>Back</button>
+          <button class="back" id="hreset" type="button" hidden>Start over</button>
+        </div>
+        <p class="privacy"><svg><use href="#i-lock"/></svg>This opens your own email app. Nothing is sent or stored by this page.</p>
+      </div>
+      <div class="nojs-only nojs-box">
+        <h3>Ask about your dates</h3>
+        <p>Email the inn with your room, rough dates and number of guests, or call.</p>
+        <a class="btn btn--red" href="mailto:waterside@dunlopinn.ca?subject=Room%20enquiry">Email waterside@dunlopinn.ca</a>
+        <a class="btn btn--navy" href="tel:+19022953355">Call 902-295-3355</a>
+        <a class="btn btn--line" href="tel:+18882901988">Toll free 888-290-1988</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="mark" href="#top"><svg viewBox="0 0 30 34" aria-hidden="true" style="width:34px;height:38px"><path d="M12 9h6l2.6 22H9.4z" fill="#f5f2eb"/><path d="M11 5h8v4h-8z" fill="#c8372d"/><path d="M13 3h4l-2-2z" fill="#c8372d"/><path d="M3 31h24v2H3z" fill="#d7b47a"/></svg><span><b>Dunlop Inn</b><small>Baddeck · Cape Breton · Nova Scotia</small></span></a>
+        <p style="margin-top:18px;max-width:26rem">Baddeck's only waterfront accommodations, with a private sandy beach and waterside deck. Sister property of the Telegraph House &amp; Motel.</p>
+      </div>
+      <div>
+        <h4>Find us</h4>
+        <p>552 Chebucto St<br>Baddeck, NS B0E 1B0<br>Check in at the Telegraph House, 479 Chebucto St</p>
+        <p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&amp;query=Dunlop+Inn+Baddeck" target="_blank" rel="noopener">Open in Google Maps</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="tel:+19022953355">902-295-3355</a><br>Toll free <a href="tel:+18882901988">888-290-1988</a><br><a href="mailto:waterside@dunlopinn.ca">waterside@dunlopinn.ca</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>Concept redesign by Jeig Torio · not the business's official website</span>
+      <span>Photos are stock concept placeholders; the harbour scene and room pictures are concept illustrations.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" id="dock" aria-label="Quick contact">
+  <a href="tel:+19022953355"><svg><use href="#i-phone"/></svg>902-295-3355</a>
+  <button type="button" id="dockcopy"><svg><use href="#i-copy"/></svg>Copy email</button>
+  <a class="go" href="#enquire"><svg><use href="#i-mail"/></svg>Plan a stay</a>
+  <span class="copied" id="dockmsg" role="status">Copied waterside@dunlopinn.ca</span>
+</div>
+<nav class="mbar" aria-label="Quick contact">
+  <a href="tel:+19022953355"><svg><use href="#i-phone"/></svg>Call</a>
+  <a href="mailto:waterside@dunlopinn.ca"><svg><use href="#i-mail"/></svg>Email</a>
+  <a class="go" href="#enquire">Plan a stay</a>
+</nav>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FILM = document.documentElement.classList.contains('film-on');
+
+/* ---------- header / ribbon sizes for the pinned film ---------- */
+function sizeVars() { const R = document.documentElement.style; R.setProperty('--hdr', $('header.top').offsetHeight + 'px'); R.setProperty('--rib', $('.ribbon').offsetHeight + 'px'); }
+sizeVars(); { let lw = innerWidth; addEventListener('resize', () => { if (innerWidth !== lw) { lw = innerWidth; sizeVars(); } }); }
+
+/* ---------- copy helper ---------- */
+function copyText(t) {
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(t).catch(() => fallbackCopy(t));
+  fallbackCopy(t); return Promise.resolve();
+}
+function fallbackCopy(t) {
+  const ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.opacity = '0';
+  document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} ta.remove();
+}
+function flash(btn, label) {
+  const sp = btn.querySelector('span'); const old = sp.textContent;
+  btn.classList.add('done'); sp.textContent = label || 'Copied';
+  btn.querySelector('use').setAttribute('href', '#i-check');
+  clearTimeout(btn._t); btn._t = setTimeout(() => { btn.classList.remove('done'); sp.textContent = old; btn.querySelector('use').setAttribute('href', '#i-copy'); }, 2200);
+}
+$$('.copy[data-copy]').forEach(b => b.addEventListener('click', () => { copyText(b.dataset.copy); flash(b); }));
+$('#dockcopy').addEventListener('click', () => { copyText('waterside@dunlopinn.ca'); const m = $('#dockmsg'); m.classList.add('show'); clearTimeout(m._t); m._t = setTimeout(() => m.classList.remove('show'), 2200); });
+
+/* ---------- progress + dock + reveals ---------- */
+const prog = $('.progress'), dock = $('#dock'), film = $('.film');
+function onScroll() {
+  const h = document.documentElement.scrollHeight - innerHeight;
+  prog.style.transform = `scaleX(${h > 0 ? scrollY / h : 0})`;
+  const eq = document.getElementById('enquire').getBoundingClientRect();
+  dock.classList.toggle('show', scrollY > film.offsetTop + film.offsetHeight - innerHeight * .6 && eq.top > innerHeight * .75);
+}
+addEventListener('scroll', onScroll, { passive: true }); onScroll();
+if ('IntersectionObserver' in window && !RM) {
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { rootMargin: '0px 0px -8% 0px', threshold: .08 });
+  $$('[data-r]').forEach(el => io.observe(el));
+  setTimeout(() => $$('[data-r]').forEach(el => { const r = el.getBoundingClientRect(); if (r.top < innerHeight) el.classList.add('in'); }), 2500);
+} else $$('[data-r]').forEach(el => el.classList.add('in'));
+
+/* ---------- ROOM EXPLORER ---------- */
+const keys = $$('.key'), filters = $$('#rfilters .chip');
+function selectRoom(id, focus) {
+  keys.forEach(k => { const on = k.dataset.room === id; k.setAttribute('aria-selected', on); k.tabIndex = on ? 0 : -1; if (on && focus) k.focus(); });
+  $$('.room').forEach(r => r.classList.toggle('on', r.id === 'r-' + id));
+}
+keys.forEach(k => {
+  k.addEventListener('click', () => { selectRoom(k.dataset.room); if (innerWidth < 900) { const r = $('#r-' + k.dataset.room).getBoundingClientRect(); if (r.top > innerHeight * .7) scrollTo({ top: scrollY + r.top - 80, behavior: RM ? 'auto' : 'smooth' }); } });
+  k.addEventListener('keydown', e => {
+    const vis = keys.filter(x => !x.classList.contains('dim')); const list = vis.length ? vis : keys;
+    const i = list.indexOf(k);
+    if (['ArrowDown', 'ArrowRight'].includes(e.key)) { e.preventDefault(); selectRoom(list[(i + 1) % list.length].dataset.room, true); }
+    if (['ArrowUp', 'ArrowLeft'].includes(e.key)) { e.preventDefault(); selectRoom(list[(i - 1 + list.length) % list.length].dataset.room, true); }
+  });
+});
+filters.forEach(f => f.addEventListener('click', () => {
+  f.setAttribute('aria-pressed', f.getAttribute('aria-pressed') !== 'true');
+  const want = filters.filter(x => x.getAttribute('aria-pressed') === 'true').map(x => x.dataset.f);
+  let first = null;
+  keys.forEach(k => { const tags = k.dataset.tags.split(' '); const ok = want.every(w => tags.includes(w)); k.classList.toggle('dim', !ok); if (ok && !first) first = k; });
+  $('#nomatch').classList.toggle('show', !first);
+  const cur = keys.find(k => k.getAttribute('aria-selected') === 'true');
+  if (first && cur.classList.contains('dim')) selectRoom(first.dataset.room);
+}));
+
+/* ---------- ARRIVING ---------- */
+const steps = $$('.step'), walker = $('#walker'), wpath = $('#walkpath');
+const wlen = wpath.getTotalLength();
+let walkT = 0, walkTarget = 0, walkRaf = null;
+function placeWalker(t) { const pt = wpath.getPointAtLength(t * wlen); walker.setAttribute('transform', `translate(${pt.x} ${pt.y})`); }
+function animWalk() { walkT += (walkTarget - walkT) * (RM ? 1 : .06); placeWalker(walkT); if (Math.abs(walkTarget - walkT) > .002) walkRaf = requestAnimationFrame(animWalk); else { walkT = walkTarget; placeWalker(walkT); walkRaf = null; } }
+function setStep(n) {
+  steps.forEach(s => s.setAttribute('aria-pressed', +s.dataset.step === n));
+  walkTarget = n <= 2 ? 0 : 1;
+  $('#rs1').style.opacity = n >= 3 ? .55 : 1;
+  $('#rs3').style.opacity = n <= 2 ? .6 : 1;
+  if (!walkRaf) walkRaf = requestAnimationFrame(animWalk);
+}
+placeWalker(0); setStep(1);
+steps.forEach(s => s.addEventListener('click', () => setStep(+s.dataset.step)));
+let mapQ = 'Dunlop+Inn+Baddeck';
+function loadMap() {
+  const box = $('#mapbox');
+  box.innerHTML = `<iframe title="Map: ${mapQ.replace(/\+/g, ' ')}" src="https://www.google.com/maps?q=${mapQ}&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`;
+}
+$('#showmap').addEventListener('click', () => {
+  $('#routesvg').style.display = 'none'; $('#mapbox').classList.add('show'); loadMap();
+  $('#showmap').style.display = 'none'; $('#maptabs').classList.add('show'); $('#mapnote').textContent = 'Map by Google.';
+});
+$$('#maptabs .chip').forEach(c => c.addEventListener('click', () => {
+  $$('#maptabs .chip').forEach(x => x.setAttribute('aria-pressed', x === c)); mapQ = c.dataset.q; loadMap();
+}));
+
+/* ---------- THINGS TO DO ---------- */
+const tchips = $$('#tfilters .chip'), acts = $$('.act');
+tchips.forEach(c => c.addEventListener('click', () => {
+  tchips.forEach(x => x.setAttribute('aria-selected', x === c));
+  acts.forEach(a => a.classList.toggle('hide', c.dataset.c !== 'all' && a.dataset.c !== c.dataset.c));
+}));
+const picked = new Set();
+$$('.pick button').forEach(b => b.addEventListener('click', () => {
+  const on = b.getAttribute('aria-pressed') !== 'true';
+  b.setAttribute('aria-pressed', on); b.closest('.act').classList.toggle('picked', on);
+  b.querySelector('span').textContent = on ? 'Added' : 'Ask for tips';
+  b.querySelector('use').setAttribute('href', on ? '#i-check' : '#i-plus');
+  on ? picked.add(b.dataset.act) : picked.delete(b.dataset.act);
+  const bar = $('#pickedbar'); bar.classList.toggle('show', picked.size > 0);
+  $('#pickedtxt').textContent = picked.size === 1 ? '1 idea added to your enquiry.' : `${picked.size} ideas added to your enquiry.`;
+  if (H.step === 4) compose();
+}));
+
+/* ---------- GALLERY + LIGHTBOX ---------- */
+const G = [
+  ['assets/poster.webp', 'The harbour at dusk', 'Concept illustration of the inn, the beach and the lighthouse, drawn for this page.'],
+  ['assets/beach.webp', 'Sandy shoreline', 'Concept photo.'],
+  ['assets/deck.webp', 'A deck by the water', 'Concept photo.'],
+  ['assets/sunroom.webp', 'Sunroom light', 'Concept photo.'],
+  ['assets/room.webp', 'A quiet room', 'Concept photo.'],
+  ['assets/sail-dusk.webp', 'A sail at sunset', 'Concept photo.'],
+];
+const lb = $('#lb'); let li = 0, lastFocus = null;
+function show(i) { li = (i + G.length) % G.length; $('#lbimg').src = G[li][0]; $('#lbimg').alt = G[li][1]; $('#lbcap').innerHTML = `<b>${G[li][1]}</b>${G[li][2]}`; $('#lbcnt').textContent = `${li + 1} / ${G.length}`; }
+function openLb(i) { lastFocus = document.activeElement; show(i); lb.hidden = false; lb.classList.add('open'); document.body.style.overflow = 'hidden'; $('#lbx').focus(); }
+function closeLb() { lb.classList.remove('open'); lb.hidden = true; document.body.style.overflow = ''; if (lastFocus) lastFocus.focus(); }
+$$('#gal button').forEach(b => b.addEventListener('click', () => openLb(+b.dataset.i)));
+$('#lbx').addEventListener('click', closeLb); $('#lbn').addEventListener('click', () => show(li + 1)); $('#lbp').addEventListener('click', () => show(li - 1));
+lb.addEventListener('click', e => { if (e.target === lb) closeLb(); });
+addEventListener('keydown', e => {
+  if (lb.hidden) return;
+  if (e.key === 'Escape') closeLb(); else if (e.key === 'ArrowRight') show(li + 1); else if (e.key === 'ArrowLeft') show(li - 1);
+  else if (e.key === 'Tab') { const f = [$('#lbx'), $('#lbp'), $('#lbn')]; const i = f.indexOf(document.activeElement); e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + 3) % 3].focus(); }
+});
+let tx = null;
+lb.addEventListener('touchstart', e => { tx = e.changedTouches[0].clientX; }, { passive: true });
+lb.addEventListener('touchend', e => { if (tx == null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 40) show(li + (dx < 0 ? 1 : -1)); tx = null; });
+
+/* ---------- ENQUIRY HELPER ---------- */
+const H = { step: 1, room: null, month: null, guests: null };
+const MN = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const om = $('#o-month'); const now = new Date();
+for (let i = 1; i <= 11; i++) { const d = new Date(now.getFullYear(), now.getMonth() + i, 1); const b = document.createElement('button'); b.className = 'chip'; b.dataset.v = `${MN[d.getMonth()]} ${d.getFullYear()}`; b.textContent = `${MN[d.getMonth()].slice(0, 3)} ${String(d.getFullYear()).slice(2)}`; b.setAttribute('aria-label', b.dataset.v); om.appendChild(b); }
+{ const b = document.createElement('button'); b.className = 'chip'; b.dataset.v = 'Not sure yet'; b.textContent = 'Not sure'; om.appendChild(b); }
+function goStep(n) {
+  H.step = n;
+  $$('.hstep').forEach(s => s.classList.toggle('on', +s.dataset.s === n));
+  $$('.hsteps i').forEach((d, i) => d.classList.toggle('on', i < n));
+  $('#hback').hidden = n === 1; $('#hreset').hidden = n !== 4;
+  if (n === 4) compose();
+  const first = $(`.hstep[data-s="${n}"] .chip[aria-pressed="true"]`) || $(`.hstep[data-s="${n}"] .chip, .hstep[data-s="${n}"] #mailgo`);
+  if (first && H._kb) first.focus();
+}
+function bindOpts(sel, key, next) {
+  $$(sel + ' .chip').forEach(b => {
+    b.setAttribute('aria-pressed', 'false');
+    b.addEventListener('click', e => {
+      $$(sel + ' .chip').forEach(x => x.setAttribute('aria-pressed', x === b));
+      H[key] = b.dataset.v; H._kb = e.detail === 0;
+      setTimeout(() => goStep(next), RM ? 0 : 160);
+    });
+  });
+}
+bindOpts('#o-room', 'room', 2); bindOpts('#o-month', 'month', 3); bindOpts('#o-guests', 'guests', 4);
+$('#hback').addEventListener('click', () => goStep(Math.max(1, H.step - 1)));
+$('#hreset').addEventListener('click', () => { H.room = H.month = H.guests = null; $$('.helper .chip').forEach(c => c.setAttribute('aria-pressed', 'false')); goStep(1); });
+function compose() {
+  const subj = `Room enquiry: ${H.room === 'Any room, whichever is free' ? 'any room' : H.room}, ${H.month === 'Not sure yet' ? 'dates flexible' : H.month}`;
+  let body = `Hello Dunlop Inn,\n\nI'd like to ask about a stay at the inn.\n\nRoom: ${H.room}\nRough month: ${H.month}\nGuests: ${H.guests}\n\nCould you let me know which dates are free, and the rate?`;
+  if (picked.size) body += `\n\nI'd also love your tips on: ${[...picked].join(', ')}.`;
+  body += `\n\nThank you!`;
+  $('#msg').innerHTML = ''; const s = document.createElement('span'); s.className = 'subj'; s.textContent = 'Subject: ' + subj; $('#msg').append(s, document.createTextNode(body));
+  $('#mailgo').href = `mailto:waterside@dunlopinn.ca?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+  H.text = `Subject: ${subj}\n\n${body}`;
+}
+$('#copymsg').addEventListener('click', () => { copyText(H.text || ''); flash($('#copymsg'), 'Copied'); });
+$$('[data-ask]').forEach(a => a.addEventListener('click', () => {
+  const b = $(`#o-room .chip[data-key="${a.dataset.ask}"]`);
+  $$('#o-room .chip').forEach(x => x.setAttribute('aria-pressed', x === b)); H.room = b.dataset.v; goStep(2);
+}));
+
+/* ---------- THE HARBOUR FILM ---------- */
+const stage = $('#stage'), cv = $('#harbour'), ctx = cv.getContext('2d');
+const beats = $$('.beat'), railBtns = $$('#rail button'), railLine = $('#rail .line b');
+let W = 0, Hh = 0, DPR = 1, P = RM ? .86 : 0, PT = P, visible = true, running = false, curBeat = -1, portrait = false;
+const BEAT_AT = [0, .2, .4, .6, .8, 1];
+const KEYS = [
+  { p: 0,   top: '#1b2946', mid: '#857f9e', low: '#eec3a0', wt: '#8d879d', wd: '#152a45', amb: .5,  fog: .85, hill: '#4d5673', sun: '#ffd2a0' },
+  { p: .2,  top: '#4a7aa8', mid: '#a3c1d7', low: '#f2e2cd', wt: '#89adc4', wd: '#1b4466', amb: .9,  fog: .45, hill: '#647a8e', sun: '#fff1d6' },
+  { p: .4,  top: '#2a6396', mid: '#7cadd0', low: '#d4e5ee', wt: '#5d93b6', wd: '#113f63', amb: 1,   fog: .12, hill: '#58728b', sun: '#ffffff' },
+  { p: .6,  top: '#34588a', mid: '#d49a6b', low: '#f5cc8c', wt: '#c39672', wd: '#163a5a', amb: .9,  fog: .1,  hill: '#5e5a6f', sun: '#ffe2a2' },
+  { p: .8,  top: '#16213e', mid: '#6b4565', low: '#dd7a56', wt: '#7f5065', wd: '#0e233f', amb: .5,  fog: .2,  hill: '#2c2b45', sun: '#ff9a62' },
+  { p: 1,   top: '#030914', mid: '#09162e', low: '#172848', wt: '#13233d', wd: '#030a17', amb: .26, fog: .12, hill: '#0a1325', sun: '#ff9a62' },
+];
+const hex = h => [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)];
+const KC = KEYS.map(k => { const o = { p: k.p, amb: k.amb, fog: k.fog }; for (const n of ['top', 'mid', 'low', 'wt', 'wd', 'hill', 'sun']) o[n] = hex(k[n]); return o; });
+const lerp = (a, b, t) => a + (b - a) * t;
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const sm = (a, b, v) => { const t = clamp((v - a) / (b - a)); return t * t * (3 - 2 * t); };
+const mixc = (a, b, t) => [lerp(a[0], b[0], t), lerp(a[1], b[1], t), lerp(a[2], b[2], t)];
+const rgba = (c, a = 1) => `rgba(${c[0] | 0},${c[1] | 0},${c[2] | 0},${a})`;
+function sky(p) {
+  let i = 0; while (i < KC.length - 2 && p > KC[i + 1].p) i++;
+  const a = KC[i], b = KC[i + 1], t = sm(0, 1, (p - a.p) / (b.p - a.p));
+  const o = {}; for (const n of ['top', 'mid', 'low', 'wt', 'wd', 'hill', 'sun']) o[n] = mixc(a[n], b[n], t);
+  o.amb = lerp(a.amb, b.amb, t); o.fog = lerp(a.fog, b.fog, t); return o;
+}
+// deterministic random
+let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const STARS = Array.from({ length: 170 }, () => [rnd(), rnd() * .62, rnd() * 1.3 + .3, rnd() * 6.28]);
+const SHIM = Array.from({ length: 120 }, () => [rnd(), rnd(), rnd() * .6 + .4, rnd() * 6.28]);
+const CLOUDS = Array.from({ length: 7 }, () => [rnd(), rnd() * .28 + .06, rnd() * .5 + .6, rnd()]);
+
+function L() {
+  portrait = W / Hh < .85;
+  const o = {};
+  if (portrait) {
+    o.hY = Hh * .42; o.lx = W * .2; o.lh = Math.min(Hh * .075, 70);
+    o.innW = Math.min(W * .8, 430); o.innX = W * .34; o.innBase = Hh * .585;
+    o.edge = x => Hh * .605 + Hh * .03 * (1 - clamp(x / W)) ** 2 + Math.sin(x * .02) * 2;
+    o.boatY = o.hY + (Hh - o.hY) * .16; o.bs = Math.min(Hh * .05, 42);
+  } else {
+    o.hY = Hh * .57; o.lx = W * .56; o.lh = Math.min(Hh * .1, 96);
+    o.innW = Math.min(W * .4, Hh * .86); o.innX = W * .995 - o.innW; o.innBase = Hh * .835;
+    o.edge = x => Hh * .855 + Hh * .13 * (1 - clamp(x / (W * .64))) ** 2 + Math.sin(x * .013) * 2.5;
+    o.boatY = o.hY + (Hh - o.hY) * .24; o.bs = Math.min(Hh * .075, 70);
+  }
+  return o;
+}
+let LO = null;
+function resize() {
+  const r = stage.getBoundingClientRect(); W = r.width; Hh = r.height;
+  DPR = Math.min(devicePixelRatio || 1, 2); if (W < 700) DPR = Math.min(DPR, 1.75);
+  cv.width = Math.round(W * DPR); cv.height = Math.round(Hh * DPR); ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  LO = L();
+}
+
+function hills(o, s, t) {
+  // far range across the harbour
+  ctx.fillStyle = rgba(mixc(s.hill, s.low, .35));
+  ctx.beginPath(); ctx.moveTo(0, o.hY);
+  for (let x = 0; x <= W + 10; x += 10) { const u = x / W; const y = o.hY - Hh * (.045 + .03 * Math.sin(u * 5.2 + 1) + .018 * Math.sin(u * 13 + 2) + .012 * Math.sin(u * 29)); ctx.lineTo(x, y); }
+  ctx.lineTo(W, o.hY); ctx.closePath(); ctx.fill();
+  ctx.fillStyle = rgba(s.hill);
+  ctx.beginPath(); ctx.moveTo(0, o.hY);
+  for (let x = 0; x <= W + 10; x += 10) { const u = x / W; const y = o.hY - Hh * (.018 + .014 * Math.sin(u * 7 + 3) + .008 * Math.sin(u * 19 + 1)) * (portrait ? 1 : (u > .45 && u < .7 ? .45 : 1)); ctx.lineTo(x, y); }
+  ctx.lineTo(W, o.hY); ctx.closePath(); ctx.fill();
+  // the lighthouse point
+  const px = o.lx;
+  ctx.beginPath(); ctx.moveTo(px - W * .09, o.hY + 1);
+  ctx.quadraticCurveTo(px - W * .03, o.hY - o.lh * .16, px, o.hY - o.lh * .14);
+  ctx.quadraticCurveTo(px + W * .03, o.hY - o.lh * .14, px + W * .06, o.hY + 1); ctx.closePath();
+  ctx.fillStyle = rgba(mixc(s.hill, [20, 30, 40], .25)); ctx.fill();
+}
+
+function lighthouse(o, s, t, night) {
+  const x = o.lx, base = o.hY - o.lh * .13, h = o.lh, bw = h * .2, tw = h * .14;
+  const white = mixc([240, 238, 230], s.low, .22), shade = mixc(white, s.top, .45);
+  const amb = clamp(s.amb + .15);
+  const lit = c => mixc(c, [8, 16, 30], 1 - amb);
+  // keeper house
+  ctx.fillStyle = rgba(lit(white)); ctx.fillRect(x + bw * .7, base - h * .2, h * .34, h * .2);
+  ctx.fillStyle = rgba(lit([200, 55, 45])); ctx.beginPath(); ctx.moveTo(x + bw * .6, base - h * .2); ctx.lineTo(x + bw * .7 + h * .17, base - h * .33); ctx.lineTo(x + bw * .8 + h * .34, base - h * .2); ctx.fill();
+  if (night > .2) { ctx.fillStyle = `rgba(255,205,120,${night * .9})`; ctx.fillRect(x + bw * .7 + h * .06, base - h * .14, h * .06, h * .07); }
+  // tower
+  ctx.beginPath(); ctx.moveTo(x - bw / 2, base); ctx.lineTo(x - tw / 2, base - h); ctx.lineTo(x + tw / 2, base - h); ctx.lineTo(x + bw / 2, base); ctx.closePath();
+  const g = ctx.createLinearGradient(x - bw / 2, 0, x + bw / 2, 0); g.addColorStop(0, rgba(lit(white))); g.addColorStop(1, rgba(lit(shade))); ctx.fillStyle = g; ctx.fill();
+  // red band
+  ctx.fillStyle = rgba(lit([200, 55, 45]));
+  ctx.beginPath(); const b1 = .42, b2 = .58; ctx.moveTo(x - lerp(bw, tw, b1) / 2, base - h * b1); ctx.lineTo(x - lerp(bw, tw, b2) / 2, base - h * b2); ctx.lineTo(x + lerp(bw, tw, b2) / 2, base - h * b2); ctx.lineTo(x + lerp(bw, tw, b1) / 2, base - h * b1); ctx.fill();
+  // gallery + lantern
+  ctx.fillStyle = rgba(lit([30, 40, 52])); ctx.fillRect(x - tw * .75, base - h - h * .025, tw * 1.5, h * .03);
+  const ly = base - h - h * .1;
+  ctx.fillStyle = night > .05 ? `rgba(255,236,180,${.4 + night * .6})` : rgba(lit([150, 175, 190]));
+  ctx.fillRect(x - tw * .4, ly, tw * .8, h * .075);
+  ctx.fillStyle = rgba(lit([200, 55, 45])); ctx.beginPath(); ctx.moveTo(x - tw * .55, ly); ctx.lineTo(x, ly - h * .09); ctx.lineTo(x + tw * .55, ly); ctx.fill();
+  return { x, y: ly + h * .035 };
+}
+
+function beam(o, lamp, night, t) {
+  if (night <= .01) return;
+  const a = t * .7; const c = Math.cos(a), sn = Math.sin(a);
+  const R = Math.max(W, Hh) * 1.5;
+  const len = R * (.15 + .85 * Math.abs(c));
+  const dir = c >= 0 ? 1 : -1;
+  const spread = (.035 + .05 * (1 - Math.abs(c))) * R * .25 + 8;
+  const ex = lamp.x + dir * len, ey = lamp.y + len * .035;
+  const facing = Math.max(0, sn) ** 8;
+  const alpha = night * (.16 + .2 * (1 - Math.abs(c)));
+  const g = ctx.createLinearGradient(lamp.x, lamp.y, ex, ey);
+  g.addColorStop(0, `rgba(255,240,196,${alpha * 1.6})`); g.addColorStop(.35, `rgba(255,240,196,${alpha})`); g.addColorStop(1, 'rgba(255,240,196,0)');
+  ctx.save(); ctx.globalCompositeOperation = 'lighter';
+  ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(lamp.x, lamp.y - 2); ctx.lineTo(ex, ey - spread); ctx.lineTo(ex, ey + spread * .7); ctx.lineTo(lamp.x, lamp.y + 2); ctx.closePath(); ctx.fill();
+  // lamp glow / flash
+  const gr = 10 + 60 * facing + 8 * night;
+  const rg = ctx.createRadialGradient(lamp.x, lamp.y, 0, lamp.x, lamp.y, gr * 2.2);
+  rg.addColorStop(0, `rgba(255,248,220,${night * (.7 + .3 * facing)})`); rg.addColorStop(.25, `rgba(255,226,160,${night * .35})`); rg.addColorStop(1, 'rgba(255,226,160,0)');
+  ctx.fillStyle = rg; ctx.beginPath(); ctx.arc(lamp.x, lamp.y, gr * 2.2, 0, 6.29); ctx.fill();
+  ctx.restore();
+  return facing;
+}
+
+function water(o, s, t, sunP, night, lamp, sunPos) {
+  const g = ctx.createLinearGradient(0, o.hY, 0, Hh);
+  g.addColorStop(0, rgba(mixc(s.wt, s.low, .35))); g.addColorStop(.18, rgba(s.wt)); g.addColorStop(1, rgba(s.wd));
+  ctx.fillStyle = g; ctx.fillRect(0, o.hY, W, Hh - o.hY);
+  // shimmer lines
+  const light = mixc(s.low, [255, 255, 255], .35);
+  ctx.lineCap = 'round';
+  for (const [sx, sy, sl, ph] of SHIM) {
+    const d = sy ** 1.7; const y = o.hY + 3 + d * (Hh - o.hY);
+    const len = (8 + 70 * d) * sl;
+    const x = ((sx * (W + 200) + t * (6 + 22 * d) * (sl + .3)) % (W + 200)) - 100;
+    const a = (.1 + .22 * Math.sin(t * 1.3 + ph) ** 2) * (1 - night * .6);
+    ctx.strokeStyle = rgba(light, a); ctx.lineWidth = .8 + 1.6 * d;
+    ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + len, y + Math.sin(t + ph) * .8); ctx.stroke();
+  }
+  // sun / moon glitter column
+  if (sunPos) {
+    const strength = sunP;
+    for (let i = 0; i < 46; i++) {
+      const d = (i / 46) ** 1.5; const y = o.hY + 2 + d * (Hh - o.hY) * .9;
+      const w = (6 + 70 * d) * (.5 + .5 * Math.sin(t * 2.1 + i * 1.7)) * (portrait ? .7 : 1);
+      const x = sunPos.x + Math.sin(t * 1.2 + i) * (4 + 14 * d);
+      ctx.strokeStyle = rgba(mixc(s.sun, [255, 255, 255], .3), strength * (.5 - d * .35)); ctx.lineWidth = 1 + 2 * d;
+      ctx.beginPath(); ctx.moveTo(x - w / 2, y); ctx.lineTo(x + w / 2, y); ctx.stroke();
+    }
+  }
+  // lighthouse lamp reflection
+  if (night > .05 && lamp) {
+    for (let i = 0; i < 26; i++) {
+      const d = (i / 26) ** 1.4; const y = o.hY + 3 + d * (Hh - o.hY) * .7;
+      const w = (3 + 26 * d) * (.4 + .6 * Math.sin(t * 2.6 + i * 2.1) ** 2);
+      ctx.strokeStyle = `rgba(255,232,170,${night * (.55 - d * .5)})`; ctx.lineWidth = 1 + d * 1.5;
+      ctx.beginPath(); ctx.moveTo(lamp.x - w / 2 + Math.sin(t + i) * 3, y); ctx.lineTo(lamp.x + w / 2 + Math.sin(t + i) * 3, y); ctx.stroke();
+    }
+  }
+  // horizon line glow
+  ctx.fillStyle = rgba(mixc(s.low, [255, 255, 255], .2), .45); ctx.fillRect(0, o.hY - .5, W, 1.4);
+}
+
+function boat(o, s, p, t, night) {
+  const k = clamp((p - .4) / .36); if (k <= 0 || k >= 1) return;
+  const bs = o.bs;
+  const x = lerp(W + bs * 2, portrait ? -bs * 2 : W * .02 - bs * 2, k) + Math.sin(t * .5) * 4;
+  const y = o.boatY + Math.sin(t * 1.6) * 1.6;
+  const rot = Math.sin(t * 1.3) * .03;
+  const amb = clamp(s.amb + .1); const lit = c => mixc(c, [8, 16, 30], 1 - amb);
+  const sail = lit(mixc([248, 246, 240], s.low, .3));
+  const draw = (flip) => {
+    ctx.save(); ctx.translate(x, y); ctx.rotate(flip ? -rot : rot); if (flip) ctx.scale(1, -.7);
+    // hull
+    ctx.fillStyle = rgba(lit([16, 34, 55])); ctx.beginPath(); ctx.moveTo(-bs * .62, -bs * .04); ctx.lineTo(bs * .6, -bs * .04); ctx.lineTo(bs * .46, bs * .13); ctx.lineTo(-bs * .5, bs * .13); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = rgba(lit([200, 55, 45])); ctx.fillRect(-bs * .58, -bs * .01, bs * 1.14, bs * .035);
+    // mast
+    ctx.strokeStyle = rgba(lit([60, 52, 40])); ctx.lineWidth = Math.max(1, bs * .02); ctx.beginPath(); ctx.moveTo(-bs * .05, -bs * .04); ctx.lineTo(-bs * .05, -bs * 1.05); ctx.stroke();
+    // main sail
+    ctx.fillStyle = rgba(sail); ctx.beginPath(); ctx.moveTo(-bs * .02, -bs * 1.0); ctx.quadraticCurveTo(bs * .28, -bs * .55, bs * .42, -bs * .1); ctx.lineTo(-bs * .02, -bs * .1); ctx.closePath(); ctx.fill();
+    // jib
+    ctx.fillStyle = rgba(mixc(sail, s.top, .15)); ctx.beginPath(); ctx.moveTo(-bs * .09, -bs * .92); ctx.lineTo(-bs * .55, -bs * .1); ctx.lineTo(-bs * .09, -bs * .1); ctx.closePath(); ctx.fill();
+    if (night > .3 && !flip) { ctx.fillStyle = `rgba(255,214,140,${night})`; ctx.beginPath(); ctx.arc(-bs * .05, -bs * 1.06, 2, 0, 6.29); ctx.fill(); }
+    ctx.restore();
+  };
+  ctx.save(); ctx.globalAlpha = .22; ctx.translate(0, bs * .22); draw(true); ctx.restore();
+  draw(false);
+  // wake
+  ctx.strokeStyle = rgba(mixc(s.low, [255, 255, 255], .5), .35); ctx.lineWidth = 1.2;
+  for (let i = 1; i < 5; i++) { ctx.beginPath(); ctx.moveTo(x + bs * .55 + i * bs * .35, y + bs * .14 + i * 1.5); ctx.lineTo(x + bs * .55 + i * bs * .35 + bs * .25, y + bs * .14 + i * 1.5); ctx.stroke(); }
+}
+
+// window list for inn (local units: inn width = 100; y up negative)
+const WIN = [
+  // main house ground floor
+  { x: 6, y: -13, w: 8, h: 10, th: .76 }, { x: 19, y: -13, w: 8, h: 10, th: .8 }, { x: 32, y: -13, w: 8, h: 10, th: .73 },
+  // main house upper: wall of windows (Lighthouse Room)
+  { x: 5, y: -29, w: 36, h: 11, th: .66, lh: 1 },
+  // attic round handled separately
+  // wing: sunroom glass
+  { x: 51, y: -27, w: 9, h: 12, th: .7, sun: 1 }, { x: 61, y: -27, w: 9, h: 12, th: .7, sun: 1 }, { x: 71, y: -27, w: 9, h: 12, th: .72, sun: 1 },
+  // wing ground
+  { x: 52, y: -11, w: 8, h: 8, th: .78 }, { x: 70, y: -11, w: 8, h: 8, th: .82 },
+];
+function inn(o, s, p, t, night) {
+  const u = o.innW / 100, X = o.innX, B = o.innBase;
+  const P2 = (lx, ly) => [X + lx * u, B + ly * u];
+  const amb = clamp(s.amb + .08);
+  const lit = c => mixc(c, [7, 14, 26], (1 - amb) * .92);
+  const clap = lit(mixc([246, 243, 236], s.low, .14));
+  const clapSh = lit(mixc([214, 214, 210], s.top, .2));
+  const roof = lit([44, 58, 74]);
+  const trim = lit([252, 251, 247]);
+  const poly = (pts, fill) => { ctx.beginPath(); pts.forEach((q, i) => { const [a, b] = P2(q[0], q[1]); i ? ctx.lineTo(a, b) : ctx.moveTo(a, b); }); ctx.closePath(); ctx.fillStyle = fill; ctx.fill(); };
+  // bank / lawn under inn
+  const bank = lit(mixc([86, 110, 78], s.top, .25));
+  ctx.fillStyle = rgba(bank);
+  { const bg = ctx.createLinearGradient(0, B - 2 * u, 0, Hh); bg.addColorStop(0, rgba(bank)); bg.addColorStop(1, rgba(mixc(bank, [8, 16, 30], .35))); ctx.fillStyle = bg; }
+  ctx.beginPath(); ctx.moveTo(X - 48 * u, Hh + 2);
+  ctx.bezierCurveTo(X - 34 * u, B + 16 * u, X - 22 * u, B - 2 * u, X + 4 * u, B - 1.5 * u); ctx.lineTo(W + 20, B - 2 * u); ctx.lineTo(W + 20, Hh + 2); ctx.closePath(); ctx.fill();
+  // chimney
+  poly([[38, -38], [43, -38], [43, -60], [38, -60]], rgba(lit([150, 70, 58])));
+  // main roof (gable)
+  poly([[-3, -32], [23, -56], [49, -32]], rgba(roof));
+  // main body
+  poly([[0, 0], [46, 0], [46, -32], [0, -32]], rgba(clap));
+  // gable triangle
+  poly([[2, -32], [23, -51], [44, -32]], rgba(clap));
+  // wing body
+  poly([[46, 0], [84, 0], [84, -30], [46, -30]], rgba(clapSh));
+  poly([[44, -30], [86, -30], [86, -34], [44, -36]], rgba(roof));
+  // clapboard lines
+  ctx.strokeStyle = rgba(lit([180, 184, 186]), .55); ctx.lineWidth = Math.max(.6, u * .18);
+  for (let y = -2; y > -32; y -= 2.2) { const [a, b] = P2(0, y); const [c] = P2(84, y); ctx.beginPath(); ctx.moveTo(a, b); ctx.lineTo(y > -30 ? c : P2(46, y)[0], b); ctx.stroke(); }
+  for (let y = -34; y > -50; y -= 2.2) { const half = (y + 32) / -19 * 21; const [a, b] = P2(2 + half, y); const [c] = P2(44 - half, y); ctx.beginPath(); ctx.moveTo(a, b); ctx.lineTo(c, b); ctx.stroke(); }
+  // corner trims
+  ctx.fillStyle = rgba(trim); [[0, 1.4], [44.6, 1.4], [82.6, 1.4]].forEach(([lx, w]) => { const [a, b] = P2(lx, -32); ctx.fillRect(a, b, w * u, 32 * u); });
+  // attic round window
+  { const [a, b] = P2(23, -40); const r = 3.2 * u; ctx.beginPath(); ctx.arc(a, b, r, 0, 6.29); ctx.fillStyle = rgba(trim); ctx.fill(); const on = sm(.74, .79, p); ctx.beginPath(); ctx.arc(a, b, r * .72, 0, 6.29); ctx.fillStyle = on > 0 ? `rgba(255,${200 + 20 * on | 0},120,${.3 + on * .7})` : rgba(mixc(s.mid, s.top, .3)); ctx.fill(); }
+  // windows
+  for (const w of WIN) {
+    const [a, b] = P2(w.x, w.y); const ww = w.w * u, hh = w.h * u;
+    ctx.fillStyle = rgba(trim); ctx.fillRect(a - u * .7, b - u * .7, ww + u * 1.4, hh + u * 1.4);
+    const on = sm(w.th, w.th + .04, p);
+    const g = ctx.createLinearGradient(a, b, a, b + hh);
+    const dayTop = mixc(s.top, [255, 255, 255], .25), dayBot = mixc(s.low, s.mid, .5);
+    g.addColorStop(0, rgba(mixc(dayTop, [255, 214, 140], on)));
+    g.addColorStop(1, rgba(mixc(dayBot, [255, 180, 96], on)));
+    ctx.fillStyle = g; ctx.fillRect(a, b, ww, hh);
+    // reflection glint by day
+    if (on < .5) { ctx.fillStyle = `rgba(255,255,255,${.18 * (1 - on) * s.amb})`; ctx.beginPath(); ctx.moveTo(a + ww * .15, b + hh); ctx.lineTo(a + ww * .45, b); ctx.lineTo(a + ww * .6, b); ctx.lineTo(a + ww * .3, b + hh); ctx.fill(); }
+    // mullions
+    ctx.strokeStyle = rgba(trim); ctx.lineWidth = Math.max(1, u * .5);
+    const cols = w.lh ? 6 : 2; ctx.beginPath();
+    for (let i = 1; i < cols; i++) { ctx.moveTo(a + ww * i / cols, b); ctx.lineTo(a + ww * i / cols, b + hh); }
+    ctx.moveTo(a, b + hh * (w.lh ? .62 : .5)); ctx.lineTo(a + ww, b + hh * (w.lh ? .62 : .5)); ctx.stroke();
+    if (on > 0) { ctx.save(); ctx.globalCompositeOperation = 'lighter'; const rg = ctx.createRadialGradient(a + ww / 2, b + hh / 2, 0, a + ww / 2, b + hh / 2, Math.max(ww, hh) * 1.1); rg.addColorStop(0, `rgba(255,190,100,${on * .28})`); rg.addColorStop(1, 'rgba(255,190,100,0)'); ctx.fillStyle = rg; ctx.fillRect(a - ww, b - hh, ww * 3, hh * 3); ctx.restore(); }
+  }
+  // French doors (sunroom) to upper deck: right side of wing
+  { const [a, b] = P2(81, -27); ctx.fillStyle = rgba(lit([200, 55, 45])); ctx.fillRect(a, b, 3 * u, 13 * u); }
+  // upper waterside deck (projecting from wing at -14)
+  const deckC = lit([172, 140, 98]);
+  poly([[46, -14], [100, -14], [100, -15.6], [46, -15.6]], rgba(deckC));
+  // upper deck railing
+  ctx.strokeStyle = rgba(trim); ctx.lineWidth = Math.max(1, u * .45);
+  { const [a, b] = P2(84, -21); const [c] = P2(100, -21); ctx.beginPath(); ctx.moveTo(a, b); ctx.lineTo(c, b); for (let lx = 84; lx <= 100; lx += 2) { const [q, r] = P2(lx, -21); ctx.moveTo(q, r); ctx.lineTo(q, r + 5.4 * u); } ctx.stroke(); }
+  // posts under upper deck
+  ctx.fillStyle = rgba(trim); [86, 93, 99].forEach(lx => { const [a, b] = P2(lx, -14); ctx.fillRect(a, b, u * .9, 14 * u); });
+  // lower deck
+  poly([[-6, 0], [104, 0], [104, 2.2], [-6, 2.2]], rgba(lit([150, 118, 80])));
+  ctx.strokeStyle = rgba(trim, .9); ctx.lineWidth = Math.max(1, u * .4);
+  { const [a, b] = P2(-6, -5); const [c] = P2(104, -5); ctx.beginPath(); ctx.moveTo(a, b); ctx.lineTo(c, b); for (let lx = -6; lx <= 104; lx += 2.5) { const [q, r] = P2(lx, -5); ctx.moveTo(q, r); ctx.lineTo(q, r + 5 * u); } ctx.stroke(); }
+  // steps down to beach
+  for (let i = 0; i < 4; i++) { const [a, b] = P2(10 + i * 1.2, 2.2 + i * 1.6); ctx.fillStyle = rgba(lit([140, 108, 74])); ctx.fillRect(a, b, 7 * u, 1.2 * u); }
+  // string lights
+  const lightsOn = sm(.69, .75, p);
+  const strand = (x0, x1, y0, sag, n, delay) => {
+    const pts = [];
+    for (let i = 0; i <= n; i++) { const k = i / n; const lx = lerp(x0, x1, k); const ly = y0 + Math.sin(k * Math.PI * (n / 4)) ** 2 * sag; pts.push(P2(lx, ly)); }
+    ctx.strokeStyle = rgba(lit([50, 50, 50]), .7); ctx.lineWidth = Math.max(.6, u * .15); ctx.beginPath(); pts.forEach(([a, b], i) => i ? ctx.lineTo(a, b) : ctx.moveTo(a, b)); ctx.stroke();
+    pts.forEach(([a, b], i) => {
+      const on = sm(.69 + delay + i * .0016, .72 + delay + i * .0016, p) * (.85 + .15 * Math.sin(t * 3 + i));
+      ctx.fillStyle = on > .02 ? `rgba(255,${210 + 30 * on | 0},${140 + 40 * on | 0},${.4 + .6 * on})` : rgba(lit([210, 205, 190]), .9);
+      ctx.beginPath(); ctx.arc(a, b + u * .5, Math.max(1.2, u * .42), 0, 6.29); ctx.fill();
+      if (on > .02) { ctx.save(); ctx.globalCompositeOperation = 'lighter'; const r = u * 2.4; const rg = ctx.createRadialGradient(a, b, 0, a, b, r); rg.addColorStop(0, `rgba(255,200,120,${.16 * on})`); rg.addColorStop(1, 'rgba(255,200,120,0)'); ctx.fillStyle = rg; ctx.fillRect(a - r, b - r, r * 2, r * 2); ctx.restore(); }
+    });
+  };
+  strand(-6, 104, -9.5, 1.6, 36, 0);
+  strand(84, 100, -24.5, 1.2, 8, .008);
+  return { lightsOn, P2, u };
+}
+
+function beach(o, s, t, p) {
+  const amb = clamp(s.amb + .1); const lit = c => mixc(c, [8, 16, 30], (1 - amb) * .9);
+  const sand = lit(mixc([228, 207, 162], s.low, .22)), sandD = lit(mixc([192, 168, 124], s.top, .18));
+  const E = o.edge, top = E(W);
+  // wet sand darker band
+  ctx.fillStyle = rgba(mixc(sandD, s.wd, .35));
+  ctx.beginPath(); ctx.moveTo(-10, Hh + 2); for (let x = -10; x <= W + 10; x += 12) ctx.lineTo(x, E(x) - 3); ctx.lineTo(W + 10, Hh + 2); ctx.closePath(); ctx.fill();
+  const g = ctx.createLinearGradient(0, top, 0, Hh); g.addColorStop(0, rgba(sand)); g.addColorStop(1, rgba(sandD));
+  ctx.fillStyle = g; ctx.beginPath(); ctx.moveTo(-10, Hh + 2);
+  for (let x = -10; x <= W + 10; x += 12) ctx.lineTo(x, E(x) + 4);
+  ctx.lineTo(W + 10, Hh + 2); ctx.closePath(); ctx.fill();
+  // ripples in the sand
+  ctx.strokeStyle = rgba(sandD, .35); ctx.lineWidth = 1;
+  for (let i = 1; i < 6; i++) { ctx.beginPath(); for (let x = 0; x <= W; x += 16) { const y = E(x) + 12 + i * (Hh - top) * .13 + Math.sin(x * .02 + i) * 2; x ? ctx.lineTo(x, y) : ctx.moveTo(x, y); } ctx.stroke(); }
+  // lapping foam
+  const lap = Math.sin(t * .9) * 3.5;
+  ctx.strokeStyle = rgba(mixc(s.low, [255, 255, 255], .65), .75); ctx.lineWidth = 2;
+  ctx.beginPath(); for (let x = -10; x <= W + 10; x += 9) { const y = E(x) - 1 + lap + Math.sin(x * .03 + t * 1.6) * 1.3; x === -10 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); } ctx.stroke();
+  ctx.strokeStyle = rgba(mixc(s.low, [255, 255, 255], .5), .32); ctx.lineWidth = 1.2;
+  ctx.beginPath(); for (let x = -10; x <= W + 10; x += 9) { const y = E(x) - 9 + lap * .5 + Math.sin(x * .025 - t * 1.2) * 1.6; x === -10 ? ctx.moveTo(x, y) : ctx.lineTo(x, y); } ctx.stroke();
+  // a few rocks at the water's edge
+  const rock = lit(mixc([92, 96, 104], s.top, .2));
+  [[.08, 1.2], [.13, .7], [.3, .9], [.34, .5]].forEach(([rx, rs]) => { const x = rx * W, y = E(x) + 2, r = (portrait ? 9 : 14) * rs; ctx.fillStyle = rgba(rock); ctx.beginPath(); ctx.ellipse(x, y, r * 1.5, r * .8, 0, Math.PI, 0); ctx.fill(); ctx.fillStyle = rgba(mixc(rock, [255, 255, 255], .2)); ctx.beginPath(); ctx.ellipse(x - r * .3, y - r * .45, r * .6, r * .22, -.2, 0, 6.29); ctx.fill(); });
+}
+function grass(o, s, t) {
+  const amb = clamp(s.amb + .1); const lit = c => mixc(c, [8, 16, 30], (1 - amb) * .9);
+  ctx.strokeStyle = rgba(lit([104, 124, 76]), .95); ctx.lineWidth = 1.5;
+  const u = o.innW / 100, B = o.innBase;
+  for (let i = 0; i < 16; i++) {
+    const x = o.innX - 24 * u + i * 6.5 * u + (i % 3) * 2; if (x > W) break;
+    const y = B + 3 * u + (i < 4 ? (4 - i) * 1.4 * u : 0) + (i % 2) * 2;
+    for (let j = -2; j <= 2; j++) { ctx.beginPath(); ctx.moveTo(x, y); ctx.quadraticCurveTo(x + j * 3, y - 8, x + j * 5 + Math.sin(t * 1.2 + i + j) * 2, y - 12 - (2 - Math.abs(j)) * 3); ctx.stroke(); }
+  }
+}
+
+function labels(o, innInfo, p) {
+  const tag = (txt, ax, ay, side, a, down) => {
+    if (a <= .01) return;
+    ctx.save(); ctx.globalAlpha = a;
+    const fs = portrait ? 11.5 : 13; ctx.font = `600 ${fs}px "Hanken Grotesk", sans-serif`; ctx.letterSpacing = '1.5px';
+    const tw = ctx.measureText(txt.toUpperCase()).width + 22;
+    const len = portrait ? 30 : 50;
+    let ex = ax + side * len, ey = ay + (down ? len * .7 : -len * .9);
+    let bx = side > 0 ? ex + 10 : ex - 10 - tw;
+    if (bx + tw > W - 8) { side = -1; ex = ax - len; bx = ex - 10 - tw; }
+    if (bx < 8) { side = 1; ex = ax + len; bx = ex + 10; }
+    const by = ey - 15;
+    ctx.strokeStyle = '#d7b47a'; ctx.lineWidth = 1.5; ctx.beginPath(); ctx.moveTo(ax, ay); ctx.lineTo(ex, ey); ctx.lineTo(ex + side * 10, ey); ctx.stroke();
+    ctx.fillStyle = '#d7b47a'; ctx.beginPath(); ctx.arc(ax, ay, 4, 0, 6.29); ctx.fill();
+    ctx.fillStyle = 'rgba(9,27,45,.88)'; ctx.beginPath(); ctx.roundRect ? ctx.roundRect(bx, by, tw, 30, 15) : ctx.rect(bx, by, tw, 30); ctx.fill();
+    ctx.fillStyle = '#f5f2eb'; ctx.textBaseline = 'middle'; ctx.fillText(txt.toUpperCase(), bx + 11, by + 15.5);
+    ctx.restore();
+  };
+  const near = c => 1 - sm(.06, .1, Math.abs(p - c));
+  const { P2 } = innInfo;
+  const bxp = portrait ? W * .62 : W * .44; tag('Private sandy beach', bxp, o.edge(bxp) + (portrait ? 14 : 30), portrait ? -1 : -1, near(.2), false);
+  const [dx, dy] = P2(95, -16); tag('Upper waterside deck', dx, dy, -1, near(.4), false);
+  if (!portrait) { const [sx, sy] = P2(62, -20); tag('Sunroom', sx, sy, -1, near(.4), true); }
+  const [lx, ly] = P2(23, -24); tag('Lighthouse Room', lx, ly, -1, near(.8), portrait);
+  tag('Lighthouse', o.lx, o.hY - o.lh * 1.15, portrait ? 1 : -1, near(.8) * .9, false);
+}
+
+function draw(p, t) {
+  const o = LO, s = sky(p);
+  const night = sm(.72, .9, p);
+  // sky
+  const g = ctx.createLinearGradient(0, 0, 0, o.hY);
+  g.addColorStop(0, rgba(s.top)); g.addColorStop(.62, rgba(s.mid)); g.addColorStop(1, rgba(s.low));
+  ctx.fillStyle = g; ctx.fillRect(0, 0, W, o.hY + 2);
+  // stars
+  const starA = sm(.8, .95, p);
+  if (starA > 0) for (const [x, y, r, ph] of STARS) { ctx.fillStyle = `rgba(255,255,255,${starA * (.4 + .6 * Math.sin(t * 1.5 + ph) ** 2) * (1 - y * .9)})`; ctx.fillRect(x * W, y * o.hY, r, r); }
+  // sun
+  const sk = clamp(p / .8); let sunPos = null, sunP = 0;
+  const sunVis = 1 - sm(.76, .82, p);
+  if (sunVis > 0) {
+    const sx = portrait ? lerp(W * .08, W * .92, sk) : lerp(W * .3, W * .7, sk);
+    const sy = o.hY - Math.sin(Math.PI * clamp(sk * .96 + .02)) * o.hY * .78 + (sk < .03 ? o.hY * .02 : 0);
+    const r = Math.min(W, Hh) * (portrait ? .05 : .042);
+    const halo = ctx.createRadialGradient(sx, sy, 0, sx, sy, r * 7);
+    halo.addColorStop(0, rgba(s.sun, .55 * sunVis)); halo.addColorStop(.3, rgba(s.sun, .14 * sunVis)); halo.addColorStop(1, rgba(s.sun, 0));
+    ctx.fillStyle = halo; ctx.fillRect(sx - r * 7, sy - r * 7, r * 14, r * 14);
+    ctx.fillStyle = rgba(mixc(s.sun, [255, 255, 255], .4), sunVis); ctx.beginPath(); ctx.arc(sx, sy, r, 0, 6.29); ctx.fill();
+    sunPos = { x: sx }; sunP = sunVis * (1 - Math.sin(Math.PI * sk) * .55);
+  }
+  // moon
+  const moonA = sm(.84, .95, p);
+  if (moonA > 0) {
+    const mx = portrait ? W * .78 : W * .44, my = o.hY * .24, mr = Math.min(W, Hh) * .03;
+    const mg = ctx.createRadialGradient(mx, my, 0, mx, my, mr * 6); mg.addColorStop(0, `rgba(230,236,255,${.25 * moonA})`); mg.addColorStop(1, 'rgba(230,236,255,0)');
+    ctx.fillStyle = mg; ctx.fillRect(mx - mr * 6, my - mr * 6, mr * 12, mr * 12);
+    ctx.fillStyle = `rgba(244,240,226,${moonA})`; ctx.beginPath(); ctx.arc(mx, my, mr, 0, 6.29); ctx.fill();
+    ctx.save(); ctx.beginPath(); ctx.arc(mx, my, mr + .5, 0, 6.29); ctx.clip();
+    ctx.fillStyle = rgba(mixc(s.top, s.mid, clamp(my / o.hY / .62)), 1); ctx.beginPath(); ctx.arc(mx + mr * .45, my - mr * .2, mr * .92, 0, 6.29); ctx.fill(); ctx.restore();
+    if (!sunPos) { sunPos = { x: mx }; sunP = moonA * .35; s.sun = [235, 238, 255]; }
+  }
+  // clouds
+  for (const [cx, cy, cs, cp] of CLOUDS) {
+    const x = ((cx * (W + 400) + t * 4 * cs) % (W + 400)) - 200, y = cy * o.hY, w = W * .16 * cs;
+    const col = mixc(mixc(s.low, [255, 255, 255], .45), s.top, night * .8);
+    ctx.fillStyle = rgba(col, .32 * (1 - night * .5));
+    ctx.beginPath(); ctx.ellipse(x, y, w, w * .12, 0, 0, 6.29); ctx.ellipse(x + w * .3, y - w * .06, w * .5, w * .1, 0, 0, 6.29); ctx.fill();
+  }
+  hills(o, s, t);
+  // fog band
+  if (s.fog > .02) {
+    const fg = ctx.createLinearGradient(0, o.hY - Hh * .12, 0, o.hY + Hh * .08);
+    const fc = mixc([215, 221, 224], s.low, .25);
+    fg.addColorStop(0, rgba(fc, 0)); fg.addColorStop(.55, rgba(fc, s.fog * .85)); fg.addColorStop(1, rgba(fc, 0));
+    ctx.fillStyle = fg; ctx.fillRect(0, o.hY - Hh * .12, W, Hh * .2);
+  }
+  const lamp = lighthouse(o, s, t, sm(.7, .82, p));
+  water(o, s, t, sunP, night, lamp, sunPos);
+  // fog drifting low over water
+  if (s.fog > .2) {
+    for (let i = 0; i < 4; i++) { const x = ((i * .3 * W + t * 8) % (W + 600)) - 300; const y = o.hY + 8 + i * 10; ctx.fillStyle = `rgba(222,228,230,${s.fog * .18})`; ctx.beginPath(); ctx.ellipse(x, y, W * .25, 10, 0, 0, 6.29); ctx.fill(); }
+  }
+  boat(o, s, p, t, night);
+  // gulls in the morning
+  const gullA = 1 - sm(.3, .45, p);
+  if (gullA > 0 && p > .05) {
+    ctx.strokeStyle = rgba([40, 50, 60], .7 * gullA * sm(.05, .12, p)); ctx.lineWidth = 1.6;
+    for (let i = 0; i < 3; i++) { const gx = ((t * 18 + i * 70) % (W + 200)) - 100 + i * 30, gy = o.hY * (.34 + i * .07) + Math.sin(t * 2 + i) * 6, ww = 7 + Math.sin(t * 6 + i) * 2.5;
+      ctx.beginPath(); ctx.moveTo(gx - ww, gy - 3); ctx.quadraticCurveTo(gx - ww / 2, gy - 6, gx, gy); ctx.quadraticCurveTo(gx + ww / 2, gy - 6, gx + ww, gy - 3); ctx.stroke(); }
+  }
+  beach(o, s, t, p);
+  const innInfo = inn(o, s, p, t, night);
+  grass(o, s, t);
+  // deck light reflections on water
+  if (innInfo.lightsOn > 0 && !portrait) {
+    for (let i = 0; i < 10; i++) { const x = o.innX - 40 - i * 26 + Math.sin(t + i) * 3, y = o.edge(o.innX - 40 - i * 26) - 12 - (i % 3) * 6; ctx.strokeStyle = `rgba(255,200,120,${innInfo.lightsOn * .25})`; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(x, y); ctx.lineTo(x + 10, y); ctx.stroke(); }
+  }
+  beam(o, lamp, sm(.76, .9, p), t);
+  labels(o, innInfo, p);
+  // overall night vignette
+  if (night > 0) { const vg = ctx.createRadialGradient(W * .6, Hh * .6, Math.min(W, Hh) * .3, W * .6, Hh * .6, Math.max(W, Hh) * .8); vg.addColorStop(0, 'rgba(2,6,14,0)'); vg.addColorStop(1, `rgba(2,6,14,${night * .45})`); ctx.fillStyle = vg; ctx.fillRect(0, 0, W, Hh); }
+}
+
+function setBeat(p) {
+  let b = 0; for (let i = 0; i < BEAT_AT.length; i++) if (p >= BEAT_AT[i] - .1) b = i;
+  if (b !== curBeat) {
+    curBeat = b;
+    beats.forEach((el, i) => el.classList.toggle('on', i === b));
+    railBtns.forEach((el, i) => { el.classList.toggle('on', i === b); el.setAttribute('aria-current', i === b ? 'step' : 'false'); });
+  }
+  railLine.style.transform = portrait ? `scaleX(${p})` : `scaleY(${p})`;
+  $('#cue').style.opacity = p > .03 ? 0 : 1;
+}
+
+let t0 = performance.now(), last = 0, frozenT = 12;
+function frame(now) {
+  if (!running) return;
+  PT += (P - PT) * .12; if (Math.abs(P - PT) < .0004) PT = P;
+  const t = RM ? frozenT : (now - t0) / 1000;
+  draw(PT, t); setBeat(PT);
+  requestAnimationFrame(frame);
+}
+function start() { if (running || !visible || document.hidden) return; running = true; requestAnimationFrame(frame); }
+function stop() { running = false; }
+
+window.__harbour = { setP: v => { P = PT = v; if (!running) { draw(PT, frozenT); setBeat(PT); } }, ready: () => stage.classList.contains('live'), draw: (v, t) => { draw(v, t); } };
+
+function initFilm() {
+  resize();
+  const pScroll = () => { const r = film.getBoundingClientRect(); const span = film.offsetHeight - innerHeight; return span > 0 ? clamp(-r.top / span) : 0; };
+  if (FILM) {
+    if (window.gsap && window.ScrollTrigger) {
+      gsap.registerPlugin(ScrollTrigger);
+      const st = { p: 0 };
+      gsap.to(st, { p: 1, ease: 'none', scrollTrigger: { trigger: film, start: 'top top', end: 'bottom bottom', scrub: .6, invalidateOnRefresh: true }, onUpdate: () => { P = st.p; } });
+      // intro choreography for the hero text
+      gsap.from('.beat--hero > *', { y: 26, opacity: 0, duration: .9, stagger: .09, ease: 'power3.out', delay: .15 });
+    } else {
+      addEventListener('scroll', () => { P = pScroll(); }, { passive: true }); P = pScroll();
+    }
+    railBtns.forEach((b, i) => b.addEventListener('click', () => {
+      const span = film.offsetHeight - innerHeight;
+      scrollTo({ top: film.offsetTop + span * BEAT_AT[i] * (i === 5 ? .985 : 1) + (i ? 2 : 0), behavior: 'smooth' });
+    }));
+  } else {
+    P = PT = .86;
+  }
+  draw(PT, frozenT); setBeat(PT);
+  requestAnimationFrame(() => stage.classList.add('live'));
+  if ('IntersectionObserver' in window) new IntersectionObserver(es => { visible = es[0].isIntersecting; visible ? start() : stop(); }, { threshold: 0 }).observe(stage);
+  document.addEventListener('visibilitychange', () => document.hidden ? stop() : start());
+  if (!RM) start(); else { addEventListener('resize', () => { resize(); draw(PT, frozenT); }); }
+  let rt; addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { resize(); if (!running) draw(PT, frozenT); }, 120); });
+}
+if (cv.getContext) {
+  const go = () => (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(initFilm);
+  if (FILM && !window.gsap) { addEventListener('load', go, { once: true }); } else go();
+}
+});
+</script>
+</body>
+</html>
